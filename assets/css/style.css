@@ -55,7 +55,7 @@ a {
     background-color: rgba(0, 0, 0, 0.5);
 }
 .bg-dark {
-    background-color: #1A1718 !important;
+    background-color: #1a1718 !important;
 }
 .grey {
     color: grey;
@@ -79,7 +79,7 @@ button {
 
 /* NAVIGATION */
 .navbar {
-    z-index: 10;
+    z-index: 1;
     background-color: transparent !important;
 }
 .navbar .navbar-nav.main-nav {
@@ -99,14 +99,24 @@ button {
 .navbar .nav-item a.active {
     border-bottom: 15px solid darkgoldenrod;
 }
+.navbar.top-nav-container {
+    z-index: 2;
+}
 .navbar .top-nav {
+    z-index: 2;
     align-items: end;
     justify-content: end !important;
     display: flex;
     justify-content: end;
 }
 .navbar .top-nav .dropdown-menu {
-    background-color: #000;
+    background-color: #1a1718;
+    min-width: 0 !important;
+    z-index: 2;
+    position: relative;
+}
+.navbar .top-nav .dropdown-menu a:hover {
+    background-color: #1a1718;
 }
 .navbar .top-nav .navbar-nav {
     align-items: end;
