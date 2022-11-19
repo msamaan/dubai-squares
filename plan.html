@@ -1,0 +1,427 @@
+<!doctype html>
+<html>
+<!-- <html lang="ar" dir="rtl"> -->
+
+<head>
+    <title>Plan your visit</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://use.fontawesome.com/releases/v6.2.0/js/all.js"></script>
+
+    <!-- <link href="example" rel="stylesheet/scss" type="text/css"> -->
+    <!-- <link rel="stylesheet/scss" type="text/css" href="style.scss" /> -->
+    <!-- <script type="module" src="./index.js"></script> -->
+    <!-- Latest compiled and minified CSS -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
+        integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- NAVIGATION HEADERS START -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid top-nav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#"><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#"><i class="fa-brands fa-youtube"></i></a>
+                </li>
+                <li class="nav-item signin">
+                    <a class="nav-link" aria-current="page" href="#">sign in</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        en
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">ar</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="./assets/img/logo.svg" /></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <div class="me-auto"></div>
+                <div>
+                    <ul class="navbar-nav main-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link active" aria-current="page" href="./homepage.html">Home</a>
+                        </li>
+                        <li class="nav-item dot-separator d-md-none d-lg-block">
+                            .
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item dot-separator d-md-none d-lg-block">
+                            .
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Squares</a>
+                        </li>
+                        <li class="nav-item dot-separator d-md-none d-lg-block">
+                            .
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Invest</a>
+                        </li>
+                        <li class="nav-item dot-separator d-md-none d-lg-block">
+                            .
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Participate</a>
+                        </li>
+                        <li class="nav-item dot-separator d-md-none d-lg-block">
+                            .
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">What's on</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- NAVIGATION HEADERS END -->
+
+    <!-- BANNER START -->
+    <div class="banner plan-banner">
+        <div class="banner-opacity"></div>
+        <div class="banner-text position-absolute">
+            <div class="diamond diamond-lg mt-3 bg-red"></div>
+            <div class="ms-5 ps-5 banner-title">
+                <h2 class="roboto-light">CUSTOMIZE<br />YOUR EXPERIENCE</h2>
+                <button class="bg-dark-transparent w-75 px-0"><b>SELECT YOUR FAVORITE THEME</b></button>
+                <ul class="plan-items w-75 p-0">
+                    <li>
+                        <a href="#">
+                            <img src="./assets/img/plan1.png" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./assets/img/plan2.png" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./assets/img/plan3.png" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./assets/img/plan4.png" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./assets/img/plan5.png" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- BANNER END -->
+
+    <!-- SECTION 1 START -->
+    <section class="container section1 py-5 position-relative">
+        <div class="row d-flex align-items-center py-5">
+            <div class="col-6">
+                <div class="title">
+                    <div class="diamond diamond-md bg-red"></div>
+                    <h2 class="ms-5 roboto-bold">About Dubai squares</h2>
+                </div>
+
+                <p class="roboto-regular py-5">Welcome to the exciting Dubai Squares brand world.<br /><br />
+                    The Dubai Squares Corporate Identity manual provides direction on how to represent the Dubai Squares
+                    brand look and feel across all marketing and operational material.<br /><br />
+                    These guidelines ensure a common language and foundation for all marketing
+                    and communication of Dubai Squares,</p>
+                <button class="bg-red mb-5">Explore more</button>
+            </div>
+        </div>
+    </section>
+    <!-- SECTION 1 END -->
+
+    <!-- SECTION 2 START -->
+    <section class="bg-grey py-5 section2">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 pb-4">
+                    <div class="title">
+                        <div class="diamond diamond-md bg-red"></div>
+                        <h3 class="ms-5 roboto-bold">Featured Squares</h3>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="hoverable-container">
+                        <img src="./assets/img/marina-square.png" alt="Avatar" class="image">
+                        <div class="overlay bg-blue">
+                            <div class="text">
+                                <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+                                    bibendum varius dolor, a mollis ex consectetur in.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hoverable-separator bg-blue"></div>
+                    <div class="hoverable-title py-2">
+                        <p class="m-0 roboto-bold">Marina square</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="hoverable-container">
+                        <img src="./assets//img/green-square.png" alt="Avatar" class="image">
+                        <div class="overlay bg-green">
+                            <div class="text">
+                                <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+                                    bibendum varius dolor, a mollis ex consectetur in.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hoverable-separator bg-green"></div>
+                    <div class="hoverable-title py-2">
+                        <p class="m-0 roboto-bold">Green square</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="hoverable-container">
+                        <img src="./assets//img/al-shindagha-square.png" alt="Avatar" class="image">
+                        <div class="overlay bg-orange">
+                            <div class="text">
+                                <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+                                    bibendum varius dolor, a mollis ex consectetur in.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hoverable-separator bg-orange"></div>
+                    <div class="hoverable-title py-2">
+                        <p class="m-0 roboto-bold">AL SHINDAGHA SQUARE</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="hoverable-container">
+                        <img src="./assets/img/manicipality-square.png" alt="Avatar" class="image">
+                        <div class="overlay bg-purple">
+                            <div class="text">
+                                <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+                                    bibendum varius dolor, a mollis ex consectetur in.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hoverable-separator bg-purple"></div>
+                    <div class="hoverable-title py-2">
+                        <p class="m-0 roboto-bold">MUNICIPALITY SQUARE</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="centered-btn text-center">
+        <button class="bg-red">Explore more</button>
+    </div>
+    <!-- SECTION 2 END -->
+
+    <!-- SECTION 3 START -->
+    <div class="container py-5 my-3">
+        <section class="section3 row">
+            <div class="col-12 pb-4">
+                <div class="title d-flex justify-content-between">
+                    <div>
+                        <div class="diamond diamond-md bg-red"></div>
+                        <h3 class="ms-5 roboto-bold">Upcoming Events</h3>
+                    </div>
+                    <a href="#" class="red">All events&nbsp;&nbsp;&nbsp;<i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="hoverable-container">
+                    <div class="event-tag py-3 px-1">
+                        <p class="m-0 roboto-bold p1">22</p>
+                        <p class="m-0 roboto-bold p2">DEC</p>
+                        <p class="m-0 roboto-bold">2022</p>
+                    </div>
+                    <img src="./assets/img/marina-square.png" alt="Avatar" class="image">
+                </div>
+                <div class="event-title mt-2">
+                    <p class="m-0 roboto-bold">Event Title</p>
+                    <small class="m-0 grey roboto-bold">10:00AM</small>
+                </div>
+                <div class="event-title">
+                    <small class="m-0 grey roboto-bold">Event Type</small>
+                    <small class="m-0 grey roboto-bold">10:00PM</small>
+                </div>
+                <div class="py-3">
+                    <small class="m-0 grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+                        bibendum varius dolor, a mollis ex consectetur in.</small>
+                </div>
+                <button class="bg-gold w-100">Explore More</button>
+            </div>
+            <div class="col-4">
+                <div class="hoverable-container">
+                    <div class="event-tag py-3 px-1">
+                        <p class="m-0 roboto-bold p1">22</p>
+                        <p class="m-0 roboto-bold p2">DEC</p>
+                        <p class="m-0 roboto-bold">2022</p>
+                    </div>
+                    <img src="./assets/img/marina-square.png" alt="Avatar" class="image">
+                </div>
+                <div class="event-title mt-2">
+                    <p class="m-0 roboto-bold">Event Title</p>
+                    <small class="m-0 grey roboto-bold">10:00AM</small>
+                </div>
+                <div class="event-title">
+                    <small class="m-0 grey roboto-bold">Event Type</small>
+                    <small class="m-0 grey roboto-bold">10:00PM</small>
+                </div>
+                <div class="py-3">
+                    <small class="m-0 grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+                        bibendum varius dolor, a mollis ex consectetur in.</small>
+                </div>
+                <button class="bg-gold w-100">Explore More</button>
+            </div>
+            <div class="col-4">
+                <div class="hoverable-container">
+                    <div class="event-tag py-3 px-1">
+                        <p class="m-0 roboto-bold p1">22</p>
+                        <p class="m-0 roboto-bold p2">DEC</p>
+                        <p class="m-0 roboto-bold">2022</p>
+                    </div>
+                    <img src="./assets/img/marina-square.png" alt="Avatar" class="image">
+                </div>
+                <div class="event-title mt-2">
+                    <p class="m-0 roboto-bold">Event Title</p>
+                    <small class="m-0 grey roboto-bold">10:00AM</small>
+                </div>
+                <div class="event-title">
+                    <small class="m-0 grey roboto-bold">Event Type</small>
+                    <small class="m-0 grey roboto-bold">10:00PM</small>
+                </div>
+                <div class="py-3">
+                    <small class="m-0 grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+                        bibendum varius dolor, a mollis ex consectetur in.</small>
+                </div>
+                <button class="bg-gold w-100">Explore More</button>
+            </div>
+        </section>
+    </div>
+    <!-- SECTION 3 END -->
+
+    <!-- SECTION 4 START -->
+    <div class="pt-5 container-fluid">
+        <section class="section2 row investors-bg-img p-5">
+            <div class="col-12 mx-4 pb-4">
+                <div class="title">
+                    <div class="diamond diamond-md bg-red"></div>
+                    <h3 class="ms-5 roboto-bold">Investors </h3>
+                </div>
+            </div>
+            <div class="col-md-5 mx-4">
+                <h3 class="text-uppercase roboto-light">Why invest with us</h3>
+                <p><strong>Dubai Squares is a joint partnership between the government and private sector aiming to
+                        achieve the following objectives:</strong><br /><br />
+                    Expanding green landscapes and environmental elements to support flexible walking and movement /
+                    transportation Increasing investment landscape and providing areas for private sector for commercial
+                    and leisure purposes (seasonal restaurants, art activities) Adding an artistic dimension to public
+                    squares and transforming it to prime destinations/locations in the Emirate Implementing open air
+                    art, cultural, and musical exhibitions, workshops, and supportive activities</p>
+                <button class="bg-gold w-100 ">Join our investors</button>
+            </div>
+        </section>
+    </div>
+    <!-- SECTION 4 END -->
+
+    <!-- FOOTER START -->
+    <footer class="mt-1">
+        <div class="top-footer container">
+            <ul class="social-links py-4 m-0">
+                <li>
+                    <a aria-current="page" href="#"><img class="w-50" src="./assets/img/logo.svg" /></a>
+                </li>
+                <li>
+                    <a aria-current="page" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li>
+                    <a aria-current="page" href="#"><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a aria-current="page" href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a aria-current="page" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+                <li>
+                    <a aria-current="page" href="#"><i class="fa-brands fa-youtube"></i></a>
+                </li>
+            </ul>
+            <div>
+                <img src="./assets/img/dubai-logo.svg" class="w-75 my-3" />
+            </div>
+        </div>
+        <div class="bottom-footer px-5 py-2">
+            <small>Copyright © 2022 DUBAI SQUARES &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; All Rights Reserved.</small>
+            <ul class="help-links">
+                <li>
+                    <small><a aria-current="page" href="#">Help&nbsp;&nbsp;.</a></small>
+                </li>
+                <li>
+                    <small><a aria-current="page" href="#">Send Feedback&nbsp;&nbsp;.</a></small>
+                </li>
+                <li>
+                    <small><a aria-current="page" href="#">Privacy Policy&nbsp;&nbsp;.</a></small>
+                </li>
+                <li>
+                    <small><a aria-current="page" href="#">Terms & Conditions&nbsp;&nbsp;.</a></small>
+                </li>
+                <li>
+                    <small><a aria-current="page" href="#">Careers</a></small>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+
+    <!-- 
+     The `defer` attribute causes the callback to execute after the full HTML
+     document has been parsed. For non-blocking uses, avoiding race conditions,
+     and consistent behavior across browsers, consider loading using Promises
+     with https://www.npmjs.com/package/@googlemaps/js-api-loader.
+    -->
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="./assets//js/script.js"></script>
+
+</body>
+
+</html>
