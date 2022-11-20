@@ -49,7 +49,7 @@ a {
     background-color: #e3001b;
 }
 .bg-gold {
-    background-color: darkgoldenrod;
+    background-color: #bead78;
 }
 .bg-dark-transparent {
     background-color: rgba(0, 0, 0, 0.5);
@@ -58,7 +58,7 @@ a {
     background-color: #1a1718 !important;
 }
 .grey {
-    color: grey;
+    color: #707275;
 }
 .red {
     color: #e3001b;
@@ -97,7 +97,7 @@ button {
     padding: 20px 0 !important;
 }
 .navbar .nav-item a.active {
-    border-bottom: 15px solid darkgoldenrod;
+    border-bottom: 15px solid #bead78;
 }
 .navbar.top-nav-container {
     z-index: 2;
@@ -130,9 +130,9 @@ button {
     padding: 0 20px;
 }
 .navbar .signin a {
-    border-left: 1px solid darkgoldenrod;
-    border-right: 1px solid darkgoldenrod;
-    color: darkgoldenrod !important;
+    border-left: 1px solid #bead78;
+    border-right: 1px solid #bead78;
+    color: #bead78 !important;
     padding: 0 20px !important;
 }
 
@@ -267,7 +267,7 @@ section.section2 {
     display: inline-flex;
     flex-direction: column;
     right: 10px;
-    color: darkgoldenrod;
+    color: #bead78;
 }
 .event-tag .p1 {
     font-size: 35px;
@@ -311,6 +311,53 @@ body.modal-open .main-container {
     -o-filter: blur(8px);
     -ms-filter: blur(8px);
     filter: blur(8px);
+}
+.modal .btn-close {
+    background-size: auto 40%;
+}
+.form-floating > label {
+    left: 0 !important;
+    right: auto !important;
+    transform-origin: 20% 0 !important;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+}
+.input-icon {
+    position: absolute;
+    top: 17px;
+    left: 10px;
+    color: #707275;
+}
+.form-floating > .form-control {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+}
+.modal input[type="submit"] {
+    border: none;
+    color: #fff;
+    border-radius: 20px;
+}
+.modal .social-login > div {
+    position: absolute;
+    top: 15px;
+    color: #707275;
+    left: 20px;
+    border-right: 2px solid #707275;
+    padding-right: 30px;
+}
+.modal .social-login svg {
+    font-size: 18px;
+}
+.modal .social-login button {
+    border-radius: 20px;
+    border: 2px solid #707275;
+    background: transparent;
+    color: #707275;
+    letter-spacing: 1px;
+    font-size: 14px !important;
+    font-family: "Roboto-Bold" !important;
+    width: 100%;
+    padding: 15px 60px;
 }
 
 @media (max-width: 991px) and (min-width: 320px) {
