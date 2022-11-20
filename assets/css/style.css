@@ -304,6 +304,15 @@ section.section2 {
     height: 35px;
 }
 
+/* SIGN IN MODAL */
+body.modal-open .main-container {
+    -webkit-filter: blur(8px);
+    -moz-filter: blur(8px);
+    -o-filter: blur(8px);
+    -ms-filter: blur(8px);
+    filter: blur(8px);
+}
+
 @media (max-width: 991px) and (min-width: 320px) {
     .banner,
     .banner-opacity {
