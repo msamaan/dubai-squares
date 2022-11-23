@@ -76,6 +76,37 @@ button {
 .centered-btn {
     margin-top: -25px;
 }
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.col-xs-15 {
+    width: 20%;
+    float: left;
+}
+@media (min-width: 768px) {
+.col-sm-15 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-15 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-15 {
+        width: 20%;
+        float: left;
+    }
+}
 
 /* NAVIGATION */
 .navbar {
@@ -84,6 +115,9 @@ button {
 }
 .navbar .navbar-nav.main-nav {
     border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+.navbar.bg-dark {
+    background-color: #1a1718 !important;
 }
 .navbar .nav-item {
     color: #fff !important;
@@ -184,13 +218,12 @@ footer .help-links a {
     height: 100vh;
 }
 .banner-title h2 {
-    font-size: 70px;
+    font-size: 60px;
 }
 .banner-text {
     top: 40%;
     left: 100px;
     color: #fff;
-    text-transform: uppercase;
 }
 .diamond {
     position: absolute;
@@ -358,6 +391,22 @@ body.modal-open .main-container {
     font-family: "Roboto-Bold" !important;
     width: 100%;
     padding: 15px 60px;
+}
+
+/* ABOUT US */
+.mission-bg-img {
+    background-image: url("../img/vision-mission.png");
+    background-size: cover;
+    color: white;
+}
+
+/* PARTICIPATE */
+.participate-banner {
+    position: absolute;
+    top: 0;
+    background-image: url("../img/participate.png");
+    height: 100vh;
+    background-size: cover;
 }
 
 @media (max-width: 991px) and (min-width: 320px) {
