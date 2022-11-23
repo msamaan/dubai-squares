@@ -89,8 +89,13 @@ button {
     width: 20%;
     float: left;
 }
+.caret-icon {
+    position: absolute;
+    top: 6px;
+    right: 10px;
+}
 @media (min-width: 768px) {
-.col-sm-15 {
+    .col-sm-15 {
         width: 20%;
         float: left;
     }
@@ -408,6 +413,19 @@ body.modal-open .main-container {
     height: 100vh;
     background-size: cover;
 }
+.form-check input {
+    accent-color: #b07c35;
+}
+.participate-modal .modal-content {
+    background-color: transparent;
+    border: none;
+}
+.participate-modal .submit-btn {
+    margin-top: -20px;
+}
+.participate-modal .submit-btn input {
+    border-radius: 15px;
+}
 
 @media (max-width: 991px) and (min-width: 320px) {
     .banner,
@@ -417,4 +435,14 @@ body.modal-open .main-container {
     section.section1 {
         margin-top: 30vh;
     }
+}
+
+/* RTL */
+.rtl .caret-icon {
+    left: 10px;
+    right: auto;
+}
+.rtl .form-floating > label {
+    left: auto !important;
+    right: 0 !important;
 }
