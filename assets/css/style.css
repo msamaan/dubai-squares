@@ -69,6 +69,9 @@ a {
 .red {
     color: #e3001b;
 }
+.white {
+    color: #fff;
+}
 button {
     color: #fff;
     border: none;
@@ -467,6 +470,23 @@ body.modal-open .main-container {
 }
 .whats-on-list button {
     font-size: 15px !important;
+    font-family: "Roboto-Bold" !important;
+}
+.hoverable-container .text-overlay {
+    line-height: 1;
+}
+.whats-on .accordion-item {
+    border: none;
+}
+.whats-on .accordion-button {
+    background: transparent;
+    box-shadow: none;
+    color: #000;
+    letter-spacing: 0;
+}
+.whats-on .accordion-button:not(.collapsed) {
+    border-left: 10px solid #e3001b;
+    margin: 0 20px;
     font-family: 'Roboto-Bold' !important;
 }
 
