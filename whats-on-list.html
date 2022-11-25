@@ -1,0 +1,668 @@
+<!doctype html>
+<html>
+<!-- <html lang="ar" dir="rtl"> -->
+
+<head>
+    <title>What's On</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://use.fontawesome.com/releases/v6.2.0/js/all.js"></script>
+
+    <!-- <link href="example" rel="stylesheet/scss" type="text/css"> -->
+    <!-- <link rel="stylesheet/scss" type="text/css" href="style.scss" /> -->
+    <!-- <script type="module" src="./index.js"></script> -->
+    <!-- Latest compiled and minified CSS -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
+        integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous"> -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+</head>
+
+<body>
+    <div class="main-container">
+        <!-- NAVIGATION HEADERS START -->
+        <nav class="navbar navbar-expand-lg bg-dark top-nav-container">
+            <div class="container-fluid top-nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </li>
+                    <li class="nav-item signin">
+                        <a class="nav-link" aria-current="page" href="#">sign in</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            en
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end px-3" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">ar</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark bottom-nav">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./homepage.html"><img class="w-75" src="./assets/img/logo.svg" /></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <div class="me-auto"></div>
+                    <div>
+                        <ul class="navbar-nav main-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="./homepage.html">Home</a>
+                            </li>
+                            <li class="nav-item dot-separator d-md-none d-lg-block">
+                                .
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./about.html">About Us</a>
+                            </li>
+                            <li class="nav-item dot-separator d-md-none d-lg-block">
+                                .
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./squares.html">Squares</a>
+                            </li>
+                            <li class="nav-item dot-separator d-md-none d-lg-block">
+                                .
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Invest</a>
+                            </li>
+                            <li class="nav-item dot-separator d-md-none d-lg-block">
+                                .
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./participate.html">Participate</a>
+                            </li>
+                            <li class="nav-item dot-separator d-md-none d-lg-block">
+                                .
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">What's on</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- NAVIGATION HEADERS END -->
+
+        <!-- BANNER START -->
+        <div class="whats-on-banner">
+            <img src="./assets/img/whats-on.png" class="w-100" />
+        </div>
+        <!-- BANNER END -->
+
+        <!-- SECTION 1 START -->
+        <section class="container-fluid pt-5 position-relative whats-on">
+            <div class="row d-flex">
+                <div class="col-2">
+                    <ul class="nav nav-tabs flex-column border-0" id="myTab" role="tablist">
+                        <li class="my-2">
+                            <a class="roboto-bold text-uppercase p-2 active" data-bs-toggle="tab"
+                                data-bs-target="#upcoming">Upcoming</a>
+                        </li>
+                        <li class="my-2">
+                            <a class="roboto-bold text-uppercase p-2" data-bs-toggle="tab"
+                                data-bs-target="#archive">Archive</a>
+                        </li>
+                        <li class="my-2">
+                            <a class="roboto-bold text-uppercase p-2" data-bs-toggle="tab"
+                                data-bs-target="#last">2021</a>
+                        </li>
+                        <li class="my-2">
+                            <a class="roboto-bold text-uppercase p-2" data-bs-toggle="tab"
+                                data-bs-target="#before">2020</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-10">
+                    <ul class="list-grid d-flex justify-content-end">
+                        <li class="active">
+                            <a href="#"><img class="p-1" src="./assets/img/list-view.png" /></a>
+                        </li>
+                        <li>
+                            <a href="./whats-on-grid.html"><img class="p-1" src="./assets/img/grid-view.png" /></a>
+                        </li>
+                    </ul>
+                    <div class="tabContent whats-on-list">
+                        <div class="tab-pane fade show row active" id="upcoming" role="tabpanel">
+                            <div class="row py-2">
+                                <div class="col-4">
+                                    <div class="hoverable-container">
+                                        <div class="event-tag py-3 px-1">
+                                            <p class="m-0 roboto-bold p1">22</p>
+                                            <p class="m-0 roboto-bold p2">DEC</p>
+                                            <p class="m-0 roboto-bold">2022</p>
+                                        </div>
+                                        <img src="./assets/img/marina-square.png" alt="Avatar" class="image">
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="event-title d-block">
+                                        <p class="m-0 roboto-bold">Event Title</p>
+                                        <small class="m-0 grey roboto-bold">Event Type</small>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="col-7">
+                                            <small class="m-0 grey">Lorem Ipsum is simply dummy text of the printing and
+                                                typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                                text ever since the 1500s, when an unknown printer took a galley of type
+                                                and
+                                                scrambled it to make a type specimen book. It has survived not only five
+                                                centuries, but also the leap into electronic typesetting, remaining
+                                                essentially unchanged.</small>
+                                        </div>
+                                        <div class="d-flex flex-column justify-content-between col-5">
+                                            <div class="text-end">
+                                                <small class="m-0 grey roboto-bold">10:00AM</small><br />
+                                                <small class="m-0 grey roboto-bold">10:00PM</small>
+                                            </div>
+                                            <button class="bg-dark-gold">Explore More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row py-2">
+                                <div class="col-4">
+                                    <div class="hoverable-container">
+                                        <div class="event-tag py-3 px-1">
+                                            <p class="m-0 roboto-bold p1">22</p>
+                                            <p class="m-0 roboto-bold p2">DEC</p>
+                                            <p class="m-0 roboto-bold">2022</p>
+                                        </div>
+                                        <img src="./assets/img/marina-square.png" alt="Avatar" class="image">
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="event-title d-block">
+                                        <p class="m-0 roboto-bold">Event Title</p>
+                                        <small class="m-0 grey roboto-bold">Event Type</small>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="col-7">
+                                            <small class="m-0 grey">Lorem Ipsum is simply dummy text of the printing and
+                                                typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                                text ever since the 1500s, when an unknown printer took a galley of type
+                                                and
+                                                scrambled it to make a type specimen book. It has survived not only five
+                                                centuries, but also the leap into electronic typesetting, remaining
+                                                essentially unchanged.</small>
+                                        </div>
+                                        <div class="d-flex flex-column justify-content-between col-5">
+                                            <div class="text-end">
+                                                <small class="m-0 grey roboto-bold">10:00AM</small><br />
+                                                <small class="m-0 grey roboto-bold">10:00PM</small>
+                                            </div>
+                                            <button class="bg-dark-gold">Explore More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row py-2">
+                                <div class="col-4">
+                                    <div class="hoverable-container">
+                                        <div class="event-tag py-3 px-1">
+                                            <p class="m-0 roboto-bold p1">22</p>
+                                            <p class="m-0 roboto-bold p2">DEC</p>
+                                            <p class="m-0 roboto-bold">2022</p>
+                                        </div>
+                                        <img src="./assets/img/marina-square.png" alt="Avatar" class="image">
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="event-title d-block">
+                                        <p class="m-0 roboto-bold">Event Title</p>
+                                        <small class="m-0 grey roboto-bold">Event Type</small>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="col-7">
+                                            <small class="m-0 grey">Lorem Ipsum is simply dummy text of the printing and
+                                                typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                                text ever since the 1500s, when an unknown printer took a galley of type
+                                                and
+                                                scrambled it to make a type specimen book. It has survived not only five
+                                                centuries, but also the leap into electronic typesetting, remaining
+                                                essentially unchanged.</small>
+                                        </div>
+                                        <div class="d-flex flex-column justify-content-between col-5">
+                                            <div class="text-end">
+                                                <small class="m-0 grey roboto-bold">10:00AM</small><br />
+                                                <small class="m-0 grey roboto-bold">10:00PM</small>
+                                            </div>
+                                            <button class="bg-dark-gold">Explore More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="archive" role="tabpanel">
+                            <div class="row py-2">
+                                <div class="col-4">
+                                    <div class="hoverable-container">
+                                        <div class="event-tag py-3 px-1">
+                                            <p class="m-0 roboto-bold p1">22</p>
+                                            <p class="m-0 roboto-bold p2">DEC</p>
+                                            <p class="m-0 roboto-bold">2022</p>
+                                        </div>
+                                        <img src="./assets/img/marina-square.png" alt="Avatar" class="image">
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="event-title d-block">
+                                        <p class="m-0 roboto-bold">Event Title</p>
+                                        <small class="m-0 grey roboto-bold">Event Type</small>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="col-7">
+                                            <small class="m-0 grey">Lorem Ipsum is simply dummy text of the printing and
+                                                typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                                text ever since the 1500s, when an unknown printer took a galley of type
+                                                and
+                                                scrambled it to make a type specimen book. It has survived not only five
+                                                centuries, but also the leap into electronic typesetting, remaining
+                                                essentially unchanged.</small>
+                                        </div>
+                                        <div class="d-flex flex-column justify-content-between col-5">
+                                            <div class="text-end">
+                                                <small class="m-0 grey roboto-bold">10:00AM</small><br />
+                                                <small class="m-0 grey roboto-bold">10:00PM</small>
+                                            </div>
+                                            <button class="bg-dark-gold">Explore More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row py-2">
+                                <div class="col-4">
+                                    <div class="hoverable-container">
+                                        <div class="event-tag py-3 px-1">
+                                            <p class="m-0 roboto-bold p1">22</p>
+                                            <p class="m-0 roboto-bold p2">DEC</p>
+                                            <p class="m-0 roboto-bold">2022</p>
+                                        </div>
+                                        <img src="./assets/img/marina-square.png" alt="Avatar" class="image">
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="event-title d-block">
+                                        <p class="m-0 roboto-bold">Event Title</p>
+                                        <small class="m-0 grey roboto-bold">Event Type</small>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="col-7">
+                                            <small class="m-0 grey">Lorem Ipsum is simply dummy text of the printing and
+                                                typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                                text ever since the 1500s, when an unknown printer took a galley of type
+                                                and
+                                                scrambled it to make a type specimen book. It has survived not only five
+                                                centuries, but also the leap into electronic typesetting, remaining
+                                                essentially unchanged.</small>
+                                        </div>
+                                        <div class="d-flex flex-column justify-content-between col-5">
+                                            <div class="text-end">
+                                                <small class="m-0 grey roboto-bold">10:00AM</small><br />
+                                                <small class="m-0 grey roboto-bold">10:00PM</small>
+                                            </div>
+                                            <button class="bg-dark-gold">Explore More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row py-2">
+                                <div class="col-4">
+                                    <div class="hoverable-container">
+                                        <div class="event-tag py-3 px-1">
+                                            <p class="m-0 roboto-bold p1">22</p>
+                                            <p class="m-0 roboto-bold p2">DEC</p>
+                                            <p class="m-0 roboto-bold">2022</p>
+                                        </div>
+                                        <img src="./assets/img/marina-square.png" alt="Avatar" class="image">
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="event-title d-block">
+                                        <p class="m-0 roboto-bold">Event Title</p>
+                                        <small class="m-0 grey roboto-bold">Event Type</small>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="col-7">
+                                            <small class="m-0 grey">Lorem Ipsum is simply dummy text of the printing and
+                                                typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                                text ever since the 1500s, when an unknown printer took a galley of type
+                                                and
+                                                scrambled it to make a type specimen book. It has survived not only five
+                                                centuries, but also the leap into electronic typesetting, remaining
+                                                essentially unchanged.</small>
+                                        </div>
+                                        <div class="d-flex flex-column justify-content-between col-5">
+                                            <div class="text-end">
+                                                <small class="m-0 grey roboto-bold">10:00AM</small><br />
+                                                <small class="m-0 grey roboto-bold">10:00PM</small>
+                                            </div>
+                                            <button class="bg-dark-gold">Explore More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="last" role="tabpanel">
+                            <div class="row py-2">
+                                <div class="col-4">
+                                    <div class="hoverable-container">
+                                        <div class="event-tag py-3 px-1">
+                                            <p class="m-0 roboto-bold p1">22</p>
+                                            <p class="m-0 roboto-bold p2">DEC</p>
+                                            <p class="m-0 roboto-bold">2022</p>
+                                        </div>
+                                        <img src="./assets/img/marina-square.png" alt="Avatar" class="image">
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="event-title d-block">
+                                        <p class="m-0 roboto-bold">Event Title</p>
+                                        <small class="m-0 grey roboto-bold">Event Type</small>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="col-7">
+                                            <small class="m-0 grey">Lorem Ipsum is simply dummy text of the printing and
+                                                typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                                text ever since the 1500s, when an unknown printer took a galley of type
+                                                and
+                                                scrambled it to make a type specimen book. It has survived not only five
+                                                centuries, but also the leap into electronic typesetting, remaining
+                                                essentially unchanged.</small>
+                                        </div>
+                                        <div class="d-flex flex-column justify-content-between col-5">
+                                            <div class="text-end">
+                                                <small class="m-0 grey roboto-bold">10:00AM</small><br />
+                                                <small class="m-0 grey roboto-bold">10:00PM</small>
+                                            </div>
+                                            <button class="bg-dark-gold">Explore More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row py-2">
+                                <div class="col-4">
+                                    <div class="hoverable-container">
+                                        <div class="event-tag py-3 px-1">
+                                            <p class="m-0 roboto-bold p1">22</p>
+                                            <p class="m-0 roboto-bold p2">DEC</p>
+                                            <p class="m-0 roboto-bold">2022</p>
+                                        </div>
+                                        <img src="./assets/img/marina-square.png" alt="Avatar" class="image">
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="event-title d-block">
+                                        <p class="m-0 roboto-bold">Event Title</p>
+                                        <small class="m-0 grey roboto-bold">Event Type</small>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="col-7">
+                                            <small class="m-0 grey">Lorem Ipsum is simply dummy text of the printing and
+                                                typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                                text ever since the 1500s, when an unknown printer took a galley of type
+                                                and
+                                                scrambled it to make a type specimen book. It has survived not only five
+                                                centuries, but also the leap into electronic typesetting, remaining
+                                                essentially unchanged.</small>
+                                        </div>
+                                        <div class="d-flex flex-column justify-content-between col-5">
+                                            <div class="text-end">
+                                                <small class="m-0 grey roboto-bold">10:00AM</small><br />
+                                                <small class="m-0 grey roboto-bold">10:00PM</small>
+                                            </div>
+                                            <button class="bg-dark-gold">Explore More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row py-2">
+                                <div class="col-4">
+                                    <div class="hoverable-container">
+                                        <div class="event-tag py-3 px-1">
+                                            <p class="m-0 roboto-bold p1">22</p>
+                                            <p class="m-0 roboto-bold p2">DEC</p>
+                                            <p class="m-0 roboto-bold">2022</p>
+                                        </div>
+                                        <img src="./assets/img/marina-square.png" alt="Avatar" class="image">
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="event-title d-block">
+                                        <p class="m-0 roboto-bold">Event Title</p>
+                                        <small class="m-0 grey roboto-bold">Event Type</small>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="col-7">
+                                            <small class="m-0 grey">Lorem Ipsum is simply dummy text of the printing and
+                                                typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                                text ever since the 1500s, when an unknown printer took a galley of type
+                                                and
+                                                scrambled it to make a type specimen book. It has survived not only five
+                                                centuries, but also the leap into electronic typesetting, remaining
+                                                essentially unchanged.</small>
+                                        </div>
+                                        <div class="d-flex flex-column justify-content-between col-5">
+                                            <div class="text-end">
+                                                <small class="m-0 grey roboto-bold">10:00AM</small><br />
+                                                <small class="m-0 grey roboto-bold">10:00PM</small>
+                                            </div>
+                                            <button class="bg-dark-gold">Explore More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="before" role="tabpanel">
+                            <div class="row py-2">
+                                <div class="col-4">
+                                    <div class="hoverable-container">
+                                        <div class="event-tag py-3 px-1">
+                                            <p class="m-0 roboto-bold p1">22</p>
+                                            <p class="m-0 roboto-bold p2">DEC</p>
+                                            <p class="m-0 roboto-bold">2022</p>
+                                        </div>
+                                        <img src="./assets/img/marina-square.png" alt="Avatar" class="image">
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="event-title d-block">
+                                        <p class="m-0 roboto-bold">Event Title</p>
+                                        <small class="m-0 grey roboto-bold">Event Type</small>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="col-7">
+                                            <small class="m-0 grey">Lorem Ipsum is simply dummy text of the printing and
+                                                typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                                text ever since the 1500s, when an unknown printer took a galley of type
+                                                and
+                                                scrambled it to make a type specimen book. It has survived not only five
+                                                centuries, but also the leap into electronic typesetting, remaining
+                                                essentially unchanged.</small>
+                                        </div>
+                                        <div class="d-flex flex-column justify-content-between col-5">
+                                            <div class="text-end">
+                                                <small class="m-0 grey roboto-bold">10:00AM</small><br />
+                                                <small class="m-0 grey roboto-bold">10:00PM</small>
+                                            </div>
+                                            <button class="bg-dark-gold">Explore More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row py-2">
+                                <div class="col-4">
+                                    <div class="hoverable-container">
+                                        <div class="event-tag py-3 px-1">
+                                            <p class="m-0 roboto-bold p1">22</p>
+                                            <p class="m-0 roboto-bold p2">DEC</p>
+                                            <p class="m-0 roboto-bold">2022</p>
+                                        </div>
+                                        <img src="./assets/img/marina-square.png" alt="Avatar" class="image">
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="event-title d-block">
+                                        <p class="m-0 roboto-bold">Event Title</p>
+                                        <small class="m-0 grey roboto-bold">Event Type</small>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="col-7">
+                                            <small class="m-0 grey">Lorem Ipsum is simply dummy text of the printing and
+                                                typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                                text ever since the 1500s, when an unknown printer took a galley of type
+                                                and
+                                                scrambled it to make a type specimen book. It has survived not only five
+                                                centuries, but also the leap into electronic typesetting, remaining
+                                                essentially unchanged.</small>
+                                        </div>
+                                        <div class="d-flex flex-column justify-content-between col-5">
+                                            <div class="text-end">
+                                                <small class="m-0 grey roboto-bold">10:00AM</small><br />
+                                                <small class="m-0 grey roboto-bold">10:00PM</small>
+                                            </div>
+                                            <button class="bg-dark-gold">Explore More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row py-2">
+                                <div class="col-4">
+                                    <div class="hoverable-container">
+                                        <div class="event-tag py-3 px-1">
+                                            <p class="m-0 roboto-bold p1">22</p>
+                                            <p class="m-0 roboto-bold p2">DEC</p>
+                                            <p class="m-0 roboto-bold">2022</p>
+                                        </div>
+                                        <img src="./assets/img/marina-square.png" alt="Avatar" class="image">
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="event-title d-block">
+                                        <p class="m-0 roboto-bold">Event Title</p>
+                                        <small class="m-0 grey roboto-bold">Event Type</small>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="col-7">
+                                            <small class="m-0 grey">Lorem Ipsum is simply dummy text of the printing and
+                                                typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                                text ever since the 1500s, when an unknown printer took a galley of type
+                                                and
+                                                scrambled it to make a type specimen book. It has survived not only five
+                                                centuries, but also the leap into electronic typesetting, remaining
+                                                essentially unchanged.</small>
+                                        </div>
+                                        <div class="d-flex flex-column justify-content-between col-5">
+                                            <div class="text-end">
+                                                <small class="m-0 grey roboto-bold">10:00AM</small><br />
+                                                <small class="m-0 grey roboto-bold">10:00PM</small>
+                                            </div>
+                                            <button class="bg-dark-gold">Explore More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SECTION 1 END -->
+
+        <!-- FOOTER START -->
+        <footer class="mt-1">
+            <div class="top-footer container">
+                <ul class="social-links py-4 m-0">
+                    <li>
+                        <a aria-current="page" href="#"><img class="w-50" src="./assets/img/logo.svg" /></a>
+                    </li>
+                    <li>
+                        <a aria-current="page" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                        <a aria-current="page" href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a aria-current="page" href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a aria-current="page" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </li>
+                    <li>
+                        <a aria-current="page" href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </li>
+                </ul>
+                <div>
+                    <img src="./assets/img/dubai-logo.svg" class="w-75 my-3" />
+                </div>
+            </div>
+            <div class="bottom-footer px-5 py-2">
+                <small>Copyright © 2022 DUBAI SQUARES &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; All Rights Reserved.</small>
+                <ul class="help-links">
+                    <li>
+                        <small><a aria-current="page" href="#">Help&nbsp;&nbsp;.</a></small>
+                    </li>
+                    <li>
+                        <small><a aria-current="page" href="#">Send Feedback&nbsp;&nbsp;.</a></small>
+                    </li>
+                    <li>
+                        <small><a aria-current="page" href="#">Privacy Policy&nbsp;&nbsp;.</a></small>
+                    </li>
+                    <li>
+                        <small><a aria-current="page" href="#">Terms & Conditions&nbsp;&nbsp;.</a></small>
+                    </li>
+                    <li>
+                        <small><a aria-current="page" href="#">Careers</a></small>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        <!-- FOOTER END -->
+    </div>
+
+    <!-- 
+     The `defer` attribute causes the callback to execute after the full HTML
+     document has been parsed. For non-blocking uses, avoiding race conditions,
+     and consistent behavior across browsers, consider loading using Promises
+     with https://www.npmjs.com/package/@googlemaps/js-api-loader.
+    -->
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="./assets//js/script.js"></script>
+
+</body>
+
+</html>

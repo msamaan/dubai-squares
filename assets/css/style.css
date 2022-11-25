@@ -54,6 +54,9 @@ a {
 .bg-gold {
     background-color: #bead78;
 }
+.bg-dark-gold {
+    background-color: #b07b35;
+}
 .bg-dark-transparent {
     background-color: rgba(0, 0, 0, 0.5);
 }
@@ -455,6 +458,16 @@ body.modal-open .main-container {
 .list-grid img {
     width: 25px;
     height: 25px;
+}
+.tabContent {
+    min-height: 100vh;
+}
+.fade:not(.show) {
+    display: none;
+}
+.whats-on-list button {
+    font-size: 15px !important;
+    font-family: 'Roboto-Bold' !important;
 }
 
 @media (max-width: 991px) and (min-width: 320px) {
