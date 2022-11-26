@@ -235,7 +235,8 @@
                             <div class="diamond diamond-md bg-red"></div>
                             <h3 class="ms-5 roboto-bold">Upcoming Events</h3>
                         </div>
-                        <a href="./whats-on-list.html" class="red">All events&nbsp;&nbsp;&nbsp;<i class="fas fa-chevron-right"></i></a>
+                        <a href="./whats-on-list.html" class="red">All events&nbsp;&nbsp;&nbsp;<i
+                                class="fas fa-chevron-right"></i></a>
                     </div>
                 </div>
                 <div class="col-4">
@@ -416,7 +417,9 @@
                             </div>
                             <input class="bg-gold w-100 mt-3 py-3" type="submit" value="SIGN IN" />
                         </form>
-                        <p class="pt-3">New To Dubai Squares <a href="#" class="red roboto-bold">Sign Up</a></p>
+                        <p class="pt-3">New To Dubai Squares <a href="#signupModal" data-bs-dismiss="modal"
+                                data-bs-toggle="modal" data-bs-target="#signupModal" class="red roboto-bold">Sign Up</a>
+                        </p>
                     </div>
                     <div class="col-lg-6">
                         <div class="d-flex justify-content-between my-1">
@@ -442,6 +445,62 @@
         </div>
     </div>
     <!-- LOGIN MODAL END -->
+
+    <!-- SIGN UP MODAL START -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-uppercase roboto-bold" id="signupModalLabel">Sign up</h5>
+                    <button type="button" class="btn-close m-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body row">
+                    <div class="col-lg-6">
+                        <form>
+                            <div class="text-center mb-3">
+                                <image id="profileImage" class="w-50" src="./assets/img/user.png" />
+                                <input id="imageUpload" type="file" name="profile_photo" placeholder="Photo" required=""
+                                    capture>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Email/Mobile</label>
+                                <div class="input-icon"><i class="fas fa-user"></i></div>
+                            </div>
+                            <div class="form-floating">
+                                <input type="password" class="form-control" id="floatingPassword"
+                                    placeholder="Password">
+                                <label for="floatingPassword">Password</label>
+                                <div class="input-icon"><i class="fas fa-lock"></i></div>
+                            </div>
+                            <input class="bg-gold w-100 mt-3 py-3" type="submit" value="SIGN UP" />
+                        </form>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="d-flex justify-content-between my-1">
+                            <hr class="w-100" />
+                            <p class="w-100 px-2 pt-1">or connect with</p>
+                            <hr class="w-100" />
+                        </div>
+                        <div class="social-login position-relative">
+                            <div><i class="fab fa-google"></i></div>
+                            <button class="mb-2">with google account</button>
+                        </div>
+                        <div class="social-login position-relative">
+                            <div><i class="fab fa-apple"></i></div>
+                            <button class="mb-2">with apple account</button>
+                        </div>
+                        <div class="social-login position-relative">
+                            <div><i class="fab fa-facebook-square"></i></div>
+                            <button class="mb-2">with facebook account</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SIGN UP MODAL END -->
 
 
     <!-- 

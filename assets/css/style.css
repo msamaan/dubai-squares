@@ -189,6 +189,12 @@ button {
 .navbar.bottom-nav {
     z-index: 2;
 }
+#imageUpload {
+    display: none;
+}
+#profileImage {
+    cursor: pointer;
+}
 
 /* FOOTER */
 footer {
@@ -487,7 +493,7 @@ body.modal-open .main-container {
 .whats-on .accordion-button:not(.collapsed) {
     border-left: 10px solid #e3001b;
     margin: 0 20px;
-    font-family: 'Roboto-Bold' !important;
+    font-family: "Roboto-Bold" !important;
 }
 
 @media (max-width: 991px) and (min-width: 320px) {
