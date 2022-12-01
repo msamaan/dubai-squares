@@ -1,0 +1,21 @@
+#map {
+    direction: ltr;
+}
+.map-item {
+    border: 1px solid #eee;
+}
+.border-blue {
+    border-right: 10px solid #2eb5ec;
+}
+.border-green {
+    border-right: 10px solid #60b366;
+}
+.border-orange {
+    border-right: 10px solid #ff9149;
+}
+.border-purple {
+    border-right: 10px solid #a7549a;
+}
+.border-red {
+    border-right: 10px solid #e3001b;
+}

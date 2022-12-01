@@ -63,6 +63,21 @@ a {
 .bg-dark {
     background-color: #1a1718 !important;
 }
+.border-blue {
+    border-left: 10px solid #2eb5ec;
+}
+.border-green {
+    border-left: 10px solid #60b366;
+}
+.border-orange {
+    border-left: 10px solid #ff9149;
+}
+.border-purple {
+    border-left: 10px solid #a7549a;
+}
+.border-red {
+    border-left: 10px solid #e3001b;
+}
 .grey {
     color: #707275;
 }
@@ -102,6 +117,12 @@ button {
     position: absolute;
     top: 6px;
     right: 10px;
+}
+.line-height-sm {
+    line-height: 1;
+}
+.text-sm {
+    font-size: 10px;
 }
 @media (min-width: 768px) {
     .col-sm-15 {
