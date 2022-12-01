@@ -63,6 +63,12 @@ a {
 .bg-dark {
     background-color: #1a1718 !important;
 }
+.map-item {
+  border: 1px solid #eee;
+}
+.map-single-item {
+  box-shadow: 0 0 10px 5px #eee;
+}
 .border-blue {
     border-left: 10px solid #2eb5ec;
 }
@@ -77,6 +83,21 @@ a {
 }
 .border-red {
     border-left: 10px solid #e3001b;
+}
+.border-top-blue {
+    border-top: 10px solid #2eb5ec;
+}
+.border-top-green {
+    border-top: 10px solid #60b366;
+}
+.border-top-orange {
+    border-top: 10px solid #ff9149;
+}
+.border-top-purple {
+    border-top: 10px solid #a7549a;
+}
+.border-top-red {
+    border-top: 10px solid #e3001b;
 }
 .grey {
     color: #707275;

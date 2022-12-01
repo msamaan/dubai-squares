@@ -212,24 +212,23 @@ body {
 .map-content .map-item img {
   width: 150px;
 }
-.map-content .map-item .icon {
+.map-horizontal-content {
+  line-height: 1;
+}
+.map-content .map-item .icon, .map-horizontal-content .icon {
   width: 15px;
 }
-.map-content .map-item .icon.blue {
+.map-content .map-item .icon.blue, .map-horizontal-content .icon.blue {
   filter: invert(56%) sepia(96%) saturate(914%) hue-rotate(165deg) brightness(97%) contrast(91%);
 }
-.map-content .map-item .icon.orange {
+.map-content .map-item .icon.orange, .map-horizontal-content .icon.orange {
   filter: invert(70%) sepia(68%) saturate(1777%) hue-rotate(324deg) brightness(101%) contrast(111%);
 }
-.map-content .map-item .icon.purple {
+.map-content .map-item .icon.purple, .map-horizontal-content .icon.purple {
   filter: invert(47%) sepia(4%) saturate(6687%) hue-rotate(257deg) brightness(87%) contrast(103%);
 }
-.map-content .map-item .icon.green {
+.map-content .map-item .icon.green, .map-horizontal-content .icon.green {
   filter: invert(57%) sepia(42%) saturate(463%) hue-rotate(74deg) brightness(101%) contrast(92%);
-}
-
-.map-item {
-  border: 1px solid #eee;
 }
 .map-label {
   font-size: 8px;

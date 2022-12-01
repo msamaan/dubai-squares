@@ -1,0 +1,491 @@
+<!doctype html>
+<html>
+<!-- <html lang="ar" dir="rtl"> -->
+
+<head>
+    <title>Invest</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://use.fontawesome.com/releases/v6.2.0/js/all.js"></script>
+
+    <!-- <link href="example" rel="stylesheet/scss" type="text/css"> -->
+    <!-- <link rel="stylesheet/scss" type="text/css" href="style.scss" /> -->
+    <!-- <script type="module" src="./index.js"></script> -->
+    <!-- Latest compiled and minified CSS -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
+        integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous"> -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/map.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="./assets/css/style-rtl.css" /> -->
+</head>
+
+<body>
+    <div class="main-container">
+        <!-- NAVIGATION HEADERS START -->
+        <nav class="navbar navbar-expand-lg bg-dark top-nav-container">
+            <div class="container-fluid top-nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </li>
+                    <li class="nav-item signin">
+                        <a class="nav-link" aria-current="page" href="#">sign in</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            en
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end px-3" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">ar</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark bottom-nav">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./homepage.html"><img class="w-75" src="./assets/img/logo.svg" /></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <div class="me-auto"></div>
+                    <div>
+                        <ul class="navbar-nav main-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./homepage.html">Home</a>
+                            </li>
+                            <li class="nav-item dot-separator d-md-none d-lg-block">
+                                .
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./about.html">About Us</a>
+                            </li>
+                            <li class="nav-item dot-separator d-md-none d-lg-block">
+                                .
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./squares.html">Squares</a>
+                            </li>
+                            <li class="nav-item dot-separator d-md-none d-lg-block">
+                                .
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Invest</a>
+                            </li>
+                            <li class="nav-item dot-separator d-md-none d-lg-block">
+                                .
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./participate.html">Participate</a>
+                            </li>
+                            <li class="nav-item dot-separator d-md-none d-lg-block">
+                                .
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./whats-on-list.html">What's on</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- NAVIGATION HEADERS END -->
+
+        <!-- MAP START -->
+        <div class="container">
+            <div class="row map-content">
+                <div class="py-3 col-lg-4">
+                    <div class="map-single-item border-top-blue p-3">
+                        <img class="w-100" src="./assets/img/marina-square.png" />
+                        <div>
+                            <h6 class="mt-2 mb-0 text-uppercase roboto-bold">Marina Square</h6>
+                            <small class="grey">14 st. deira dubai</small><br />
+                            <small class="grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+                                bibendum varius dolor, a mollis ex consectetur in.</small>
+                        </div>
+                    </div>
+                    <button class="bg-blue w-100 mt-4">INVEST NOW</button>
+                </div>
+                <!-- <div class="col-lg-8 d-lg-block d-md-none"> -->
+                <div class="col-lg-8 col-md-12">
+                    <div id="map"></div>
+                </div>
+            </div>
+            <div class="row my-2">
+                <div class="col-lg-3 col-md-6 my-3">
+                    <div class="border-top-blue map-single-item">
+                        <img class="w-100" src="./assets/img/marina-square.png" />
+                        <div class="map-horizontal-content p-3">
+                            <h6 class="m-0 text-uppercase roboto-bold">Marina Square</h6>
+                            <small class="grey text-sm">14 st. deira dubai</small>
+                            <div class="my-1">
+                                <img class="icon blue me-1" src="./assets/img/arts.svg" />
+                                <small class="text-sm text-uppercase roboto-bold grey">open art gallery</small>
+                            </div>
+                            <div><small class="text-sm text-uppercase roboto-bold grey">20-30 march</small></div>
+                            <div><small class="text-sm text-uppercase roboto-bold grey">10:00am-5:00pm</small></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 my-3">
+                    <div class="border-top-orange map-single-item">
+                        <img class="w-100" src="./assets/img/marina-square.png" />
+                        <div class="map-horizontal-content p-3">
+                            <h6 class="m-0 text-uppercase roboto-bold">Marina Square</h6>
+                            <small class="grey text-sm">14 st. deira dubai</small>
+                            <div class="my-1">
+                                <img class="icon orange me-1" src="./assets/img/food.svg" />
+                                <small class="text-sm text-uppercase roboto-bold grey">food festival</small>
+                            </div>
+                            <div><small class="text-sm text-uppercase roboto-bold grey">20-30 march</small></div>
+                            <div><small class="text-sm text-uppercase roboto-bold grey">10:00am-5:00pm</small></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 my-3">
+                    <div class="border-top-purple map-single-item">
+                        <img class="w-100" src="./assets/img/marina-square.png" />
+                        <div class="map-horizontal-content p-3">
+                            <h6 class="m-0 text-uppercase roboto-bold">Marina Square</h6>
+                            <small class="grey text-sm">14 st. deira dubai</small>
+                            <div class="my-1">
+                                <img class="icon purple me-1" src="./assets/img/market.svg" />
+                                <small class="text-sm text-uppercase roboto-bold grey">farmer's market</small>
+                            </div>
+                            <div><small class="text-sm text-uppercase roboto-bold grey">20-30 march</small></div>
+                            <div><small class="text-sm text-uppercase roboto-bold grey">10:00am-5:00pm</small></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 my-3">
+                    <div class="border-top-green map-single-item">
+                        <img class="w-100" src="./assets/img/marina-square.png" />
+                        <div class="map-horizontal-content p-3">
+                            <h6 class="m-0 text-uppercase roboto-bold">Marina Square</h6>
+                            <small class="grey text-sm">14 st. deira dubai</small>
+                            <div class="my-1">
+                                <img class="icon green me-1" src="./assets/img/sports.svg" />
+                                <small class="text-sm text-uppercase roboto-bold grey">cycling event</small>
+                            </div>
+                            <div><small class="text-sm text-uppercase roboto-bold grey">20-30 march</small></div>
+                            <div><small class="text-sm text-uppercase roboto-bold grey">10:00am-5:00pm</small></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 my-3">
+                    <div class="border-top-blue map-single-item">
+                        <img class="w-100" src="./assets/img/marina-square.png" />
+                        <div class="map-horizontal-content p-3">
+                            <h6 class="m-0 text-uppercase roboto-bold">Marina Square</h6>
+                            <small class="grey text-sm">14 st. deira dubai</small>
+                            <div class="my-1">
+                                <img class="icon blue me-1" src="./assets/img/arts.svg" />
+                                <small class="text-sm text-uppercase roboto-bold grey">open art gallery</small>
+                            </div>
+                            <div><small class="text-sm text-uppercase roboto-bold grey">20-30 march</small></div>
+                            <div><small class="text-sm text-uppercase roboto-bold grey">10:00am-5:00pm</small></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 my-3">
+                    <div class="border-top-orange map-single-item">
+                        <img class="w-100" src="./assets/img/marina-square.png" />
+                        <div class="map-horizontal-content p-3">
+                            <h6 class="m-0 text-uppercase roboto-bold">Marina Square</h6>
+                            <small class="grey text-sm">14 st. deira dubai</small>
+                            <div class="my-1">
+                                <img class="icon orange me-1" src="./assets/img/food.svg" />
+                                <small class="text-sm text-uppercase roboto-bold grey">food festival</small>
+                            </div>
+                            <div><small class="text-sm text-uppercase roboto-bold grey">20-30 march</small></div>
+                            <div><small class="text-sm text-uppercase roboto-bold grey">10:00am-5:00pm</small></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 my-3">
+                    <div class="border-top-purple map-single-item">
+                        <img class="w-100" src="./assets/img/marina-square.png" />
+                        <div class="map-horizontal-content p-3">
+                            <h6 class="m-0 text-uppercase roboto-bold">Marina Square</h6>
+                            <small class="grey text-sm">14 st. deira dubai</small>
+                            <div class="my-1">
+                                <img class="icon purple me-1" src="./assets/img/market.svg" />
+                                <small class="text-sm text-uppercase roboto-bold grey">farmer's market</small>
+                            </div>
+                            <div><small class="text-sm text-uppercase roboto-bold grey">20-30 march</small></div>
+                            <div><small class="text-sm text-uppercase roboto-bold grey">10:00am-5:00pm</small></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 my-3">
+                    <div class="border-top-green map-single-item">
+                        <img class="w-100" src="./assets/img/marina-square.png" />
+                        <div class="map-horizontal-content p-3">
+                            <h6 class="m-0 text-uppercase roboto-bold">Marina Square</h6>
+                            <small class="grey text-sm">14 st. deira dubai</small>
+                            <div class="my-1">
+                                <img class="icon green me-1" src="./assets/img/sports.svg" />
+                                <small class="text-sm text-uppercase roboto-bold grey">cycling event</small>
+                            </div>
+                            <div><small class="text-sm text-uppercase roboto-bold grey">20-30 march</small></div>
+                            <div><small class="text-sm text-uppercase roboto-bold grey">10:00am-5:00pm</small></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- MAP END -->
+
+        <!-- FOOTER START -->
+        <footer class="mt-1">
+            <div class="top-footer container">
+                <ul class="social-links py-4 m-0">
+                    <li>
+                        <a aria-current="page" href="#"><img class="w-50" src="./assets/img/logo.svg" /></a>
+                    </li>
+                    <li>
+                        <a aria-current="page" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                        <a aria-current="page" href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a aria-current="page" href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a aria-current="page" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </li>
+                    <li>
+                        <a aria-current="page" href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </li>
+                </ul>
+                <div>
+                    <img src="./assets/img/dubai-logo.svg" class="w-75 my-3" />
+                </div>
+            </div>
+            <div class="bottom-footer px-5 py-2">
+                <small>Copyright © 2022 DUBAI SQUARES &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; All Rights Reserved.</small>
+                <ul class="help-links">
+                    <li>
+                        <small><a aria-current="page" href="#">Help&nbsp;&nbsp;.</a></small>
+                    </li>
+                    <li>
+                        <small><a aria-current="page" href="#">Send Feedback&nbsp;&nbsp;.</a></small>
+                    </li>
+                    <li>
+                        <small><a aria-current="page" href="#">Privacy Policy&nbsp;&nbsp;.</a></small>
+                    </li>
+                    <li>
+                        <small><a aria-current="page" href="#">Terms & Conditions&nbsp;&nbsp;.</a></small>
+                    </li>
+                    <li>
+                        <small><a aria-current="page" href="#">Careers</a></small>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        <!-- FOOTER END -->
+    </div>
+
+    <!-- 
+     The `defer` attribute causes the callback to execute after the full HTML
+     document has been parsed. For non-blocking uses, avoiding race conditions,
+     and consistent behavior across browsers, consider loading using Promises
+     with https://www.npmjs.com/package/@googlemaps/js-api-loader.
+    -->
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&libraries=marker&v=beta"
+        defer></script>
+
+    <script src="./assets//js/script.js"></script>
+
+
+    <script>
+        const advancedMarkerViews = [];
+        $(document).ready(function () {
+            let that = this;
+            $("#map-content").height(window.innerHeight)
+        });
+        function initMap() {
+            const center = {
+                lat: 37.43238031167444,
+                lng: -122.16795397128632,
+            };
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 11,
+                center,
+                mapId: "4504f8b37365c3d0",
+            });
+
+            for (const [i, property] of properties.entries()) {
+                advancedMarkerViews[i] = new google.maps.marker.AdvancedMarkerView({
+                    map,
+                    content: buildContent(property),
+                    position: property.position,
+                    title: property.description,
+                });
+
+                const advancedMarkerView = advancedMarkerViews[i];
+                const element = advancedMarkerView.element;
+
+                ["focus", "pointerenter"].forEach((event) => {
+                    element.addEventListener(event, () => {
+                        highlight(advancedMarkerView, property);
+                    });
+                });
+                ["blur", "pointerleave"].forEach((event) => {
+                    element.addEventListener(event, () => {
+                        unhighlight(advancedMarkerView, property);
+                    });
+                });
+                advancedMarkerView.addListener("click", (event) => {
+                    unhighlight(advancedMarkerView, property);
+                });
+            }
+
+            $(".map-item").each(function (i) {
+                this.addEventListener("click", function () {
+                    advancedMarkerViews.forEach((advancedMarkerView, index) => {
+                        unhighlight(advancedMarkerView, properties[index])
+                    })
+                    highlight(advancedMarkerViews[i], properties[i])
+                })
+            });
+        }
+
+        function highlight(markerView, property) {
+            markerView.content.classList.add("highlight");
+            markerView.element.style.zIndex = 1;
+        }
+
+        function unhighlight(markerView, property) {
+            markerView.content.classList.remove("highlight");
+            markerView.element.style.zIndex = "";
+        }
+
+        function buildContent(property) {
+            const content = document.createElement("div");
+
+            content.classList.add("property");
+            content.classList.add("highlight");
+            content.innerHTML =
+                `
+    <div style="background-color: red; height: 15px; width: 15px; transform: rotate(45deg);"></div>
+    <div class="details">
+        <img src="./assets/img/marina-square.png" style="width: 100px; border-radius: 10px" />
+        <small class="mt-1 roboto-bold text-uppercase map-label text-center">${property.name}</small>
+    </div>
+      `;
+            return content;
+        }
+
+        const properties = [
+            {
+                name: "Marina Square",
+                position: {
+                    lat: 37.50024109655184,
+                    lng: -122.28528451834352,
+                },
+            },
+            // {
+            //     name: "Marina Square",
+            //     position: {
+            //         lat: 37.44440882321596,
+            //         lng: -122.2160620727,
+            //     },
+            // },
+            // {
+            //     name: "Marina Square",
+            //     position: {
+            //         lat: 37.39561833718522,
+            //         lng: -122.21855116258479,
+            //     },
+            // },
+            // {
+            //     name: "Marina Square",
+            //     position: {
+            //         lat: 37.423928529779644,
+            //         lng: -122.1087629822001,
+            //     },
+            // },
+            // {
+            //     name: "Marina Square",
+            //     position: {
+            //         lat: 37.40578635332598,
+            //         lng: -122.15043378466069,
+            //     },
+            // },
+            // {
+            //     name: "MARINA SQUARE",
+            //     position: {
+            //         lat: 37.36399747905774,
+            //         lng: -122.10465384268522,
+            //     },
+            // },
+            // {
+            //     name: "Marina Square",
+            //     position: {
+            //         lat: 37.38343706184458,
+            //         lng: -122.02340436985183,
+            //     },
+            // },
+            // {
+            //     name: "Marina Square",
+            //     position: {
+            //         lat: 37.34576403052,
+            //         lng: -122.04455090047453,
+            //     },
+            // },
+            // {
+            //     name: "Marina Square",
+            //     position: {
+            //         lat: 37.362863347890716,
+            //         lng: -121.97802139023555,
+            //     },
+            // },
+            // {
+            //     name: "Marina Square",
+            //     position: {
+            //         lat: 37.41391636421949,
+            //         lng: -121.94592071575907,
+            //     },
+            // },
+        ];
+
+        window.initMap = initMap;
+
+    </script>
+
+</body>
+
+</html>
