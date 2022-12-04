@@ -1,3 +1,27 @@
+@font-face {
+    font-family: "IBM-Light";
+    src: url("../fonts/IBM_Plex_Sans_Arabic/IBMPlexSansArabic-Light.ttf") format("woff2");
+}
+@font-face {
+    font-family: "IBM-Regular";
+    src: url("../fonts/IBM_Plex_Sans_Arabic//IBMPlexSansArabic-Regular.ttf") format("woff2");
+}
+@font-face {
+    font-family: "IBM-Bold";
+    src: url("../fonts/IBM_Plex_Sans_Arabic//IBMPlexSansArabic-Bold.ttf") format("woff2");
+}
+.ibm-light {
+    font-family: "IBM-Light";
+}
+.ibm-regular {
+    font-family: "IBM-Regular";
+}
+.ibm-bold {
+    font-family: "IBM-Bold";
+}
+button, .button {
+    letter-spacing: 0;
+}
 #map {
     direction: ltr;
 }
@@ -18,4 +42,14 @@
 }
 .border-red {
     border-right: 10px solid #e3001b;
+}
+.banner-text {
+    right: 100px;
+    left: auto;
+}
+section.section1 {
+    background-position: -100%;
+}
+.investors-bg-img {
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 1) 60%, rgba(255, 255, 255, 0)), url(../img/pexels-kostiantyn-stupak-599982.png);
 }
