@@ -290,11 +290,13 @@ footer .help-links a {
 }
 .banner-title h2 {
     font-size: 60px;
+    text-shadow: 1px 1px #000;
 }
 .banner-text {
     top: 45%;
     left: 100px;
     color: #fff;
+    text-shadow: 1px 1px #000;
 }
 .diamond {
     position: absolute;
@@ -371,7 +373,7 @@ section.section2 {
     display: inline-flex;
     flex-direction: column;
     right: 10px;
-    color: #bead78;
+    color: #b07b35;
 }
 .event-tag .p1 {
     font-size: 35px;
@@ -383,6 +385,14 @@ section.section2 {
 .investors-bg-img {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 1) 40%, rgba(255, 255, 255, 0)),
         url("../img/pexels-kostiantyn-stupak-599982.png");
+    background-size: cover;
+    color: white;
+}
+section.invest {
+    margin-top: 80vh;
+}
+.invest-bg-img {
+    background-image: url("../img/darcey-beau-q8D7WZc40eA-unsplash.png");
     background-size: cover;
     color: white;
 }
@@ -401,13 +411,9 @@ section.section2 {
     transform: rotate(45deg);
     padding: 10px;
     margin: 15px;
-    /* animation-name: rotate;
-    animation-duration: 1s; */
     transition: transform 0.7s ease-in-out;
 }
 .plan-items li:hover {
-    /* animation-name: rotate;
-    animation-duration: 1s; */
     transform: rotate(405deg);
 }
 .plan-items li img {
@@ -564,6 +570,9 @@ body.modal-open .main-container {
     }
     section.section1 {
         margin-top: 30vh;
+    }
+    section.invest {
+        margin-top: 40vh;
     }
 }
 

@@ -3,7 +3,7 @@
 <!-- <html lang="ar" dir="rtl"> -->
 
 <head>
-    <title>Map</title>
+    <title>Event Details</title>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <script src="https://use.fontawesome.com/releases/v6.2.0/js/all.js"></script>
 
@@ -73,7 +73,7 @@
                     <div>
                         <ul class="navbar-nav main-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="./homepage.html">Home</a>
+                                <a class="nav-link" aria-current="page" href="./homepage.html">Home</a>
                             </li>
                             <li class="nav-item dot-separator d-md-none d-lg-block">
                                 .
@@ -103,7 +103,7 @@
                                 .
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./whats-on-list.html">What's on</a>
+                                <a class="nav-link active" href="./whats-on-list.html">What's on</a>
                             </li>
                         </ul>
                     </div>
@@ -113,138 +113,35 @@
         <!-- NAVIGATION HEADERS END -->
 
         <!-- MAP START -->
-        <div class="container-fluid">
-            <div class="row map-content" id="map-content">
-                <div class="py-3 col-lg-4 d-lg-block d-md-none" id="map-data">
-                    <div class="map-item m-2 mt-0 d-flex border-blue">
-                        <!-- <div class="border bg-blue"></div> -->
-                        <div class="d-flex flex-row p-2">
-                            <img src="./assets/img/marina-square.png" />
-                            <div class="px-3 line-height-sm">
-                                <p class="m-0 text-uppercase roboto-bold">Marina Square</p>
-                                <small class="grey text-sm">14 st. deira dubai</small>
-                                <div class="my-1">
-                                    <img class="icon blue me-1" src="./assets/img/arts.svg" />
-                                    <small class="text-sm text-uppercase roboto-bold grey">open art gallery</small>
-                                </div>
-                                <div><small class="text-sm text-uppercase roboto-bold grey">20-30 march</small></div>
-                                <div><small class="text-sm text-uppercase roboto-bold grey">10:00am-5:00pm</small></div>
+        <div class="container">
+            <div class="row map-content">
+                <div class="py-3 col-lg-4">
+                    <div>
+                        <div class="hoverable-container">
+                            <div class="event-tag py-3 px-1">
+                                <p class="m-0 roboto-bold p1">22</p>
+                                <p class="m-0 roboto-bold p2">DEC</p>
+                                <p class="m-0 roboto-bold">2022</p>
                             </div>
+                            <img src="./assets/img/marina-square.png" alt="Avatar" class="image">
                         </div>
-                    </div>
-                    <div class="map-item m-2 d-flex border-orange">
-                        <!-- <div class="border bg-orange"></div> -->
-                        <div class="d-flex flex-row p-2">
-                            <img src="./assets/img/marina-square.png" />
-                            <div class="px-3 line-height-sm">
-                                <p class="m-0 text-uppercase roboto-bold">Marina Square</p>
-                                <small class="grey text-sm">14 st. deira dubai</small>
-                                <div class="my-1">
-                                    <img class="icon orange me-1" src="./assets/img/food.svg" />
-                                    <small class="text-sm text-uppercase roboto-bold grey">food festival</small>
-                                </div>
-                                <div><small class="text-sm text-uppercase roboto-bold grey">20-30 march</small></div>
-                                <div><small class="text-sm text-uppercase roboto-bold grey">10:00am-5:00pm</small></div>
-                            </div>
+                        <div class="event-title mt-2">
+                            <p class="m-0 roboto-bold">Event Title</p>
+                            <small class="m-0 grey roboto-bold">10:00AM</small>
                         </div>
-                    </div>
-                    <div class="map-item m-2 d-flex border-purple">
-                        <!-- <div class="border bg-purple"></div> -->
-                        <div class="d-flex flex-row p-2">
-                            <img src="./assets/img/marina-square.png" />
-                            <div class="px-3 line-height-sm">
-                                <p class="m-0 text-uppercase roboto-bold">Marina Square</p>
-                                <small class="grey text-sm">14 st. deira dubai</small>
-                                <div class="my-1">
-                                    <img class="icon purple me-1" src="./assets/img/market.svg" />
-                                    <small class="text-sm text-uppercase roboto-bold grey">farmer's market</small>
-                                </div>
-                                <div><small class="text-sm text-uppercase roboto-bold grey">20-30 march</small></div>
-                                <div><small class="text-sm text-uppercase roboto-bold grey">10:00am-5:00pm</small></div>
-                            </div>
+                        <div class="event-title">
+                            <small class="m-0 grey roboto-bold">Event Type</small>
+                            <small class="m-0 grey roboto-bold">10:00PM</small>
                         </div>
-                    </div>
-                    <div class="map-item m-2 d-flex border-green">
-                        <!-- <div class="border bg-green"></div> -->
-                        <div class="d-flex flex-row p-2">
-                            <img src="./assets/img/marina-square.png" />
-                            <div class="px-3 line-height-sm">
-                                <p class="m-0 text-uppercase roboto-bold">Marina Square</p>
-                                <small class="grey text-sm">14 st. deira dubai</small>
-                                <div class="my-1">
-                                    <img class="icon green me-1" src="./assets/img/sports.svg" />
-                                    <small class="text-sm text-uppercase roboto-bold green">cycling event</small>
-                                </div>
-                                <div><small class="text-sm text-uppercase roboto-bold grey">20-30 march</small></div>
-                                <div><small class="text-sm text-uppercase roboto-bold grey">10:00am-5:00pm</small></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="map-item m-2 d-flex border-blue">
-                        <!-- <div class="border bg-blue"></div> -->
-                        <div class="d-flex flex-row p-2">
-                            <img src="./assets/img/marina-square.png" />
-                            <div class="px-3 line-height-sm">
-                                <p class="m-0 text-uppercase roboto-bold">Marina Square</p>
-                                <small class="grey text-sm">14 st. deira dubai</small>
-                                <div class="my-1">
-                                    <img class="icon blue me-1" src="./assets/img/arts.svg" />
-                                    <small class="text-sm text-uppercase roboto-bold grey">open art gallery</small>
-                                </div>
-                                <div><small class="text-sm text-uppercase roboto-bold grey">20-30 march</small></div>
-                                <div><small class="text-sm text-uppercase roboto-bold grey">10:00am-5:00pm</small></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="map-item m-2 d-flex border-orange">
-                        <!-- <div class="border bg-orange"></div> -->
-                        <div class="d-flex flex-row p-2">
-                            <img src="./assets/img/marina-square.png" />
-                            <div class="px-3 line-height-sm">
-                                <p class="m-0 text-uppercase roboto-bold">Marina Square</p>
-                                <small class="grey text-sm">14 st. deira dubai</small>
-                                <div class="my-1">
-                                    <img class="icon orange me-1" src="./assets/img/food.svg" />
-                                    <small class="text-sm text-uppercase roboto-bold grey">food festival</small>
-                                </div>
-                                <div><small class="text-sm text-uppercase roboto-bold grey">20-30 march</small></div>
-                                <div><small class="text-sm text-uppercase roboto-bold grey">10:00am-5:00pm</small></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="map-item m-2 d-flex border-purple">
-                        <!-- <div class="border bg-purple"></div> -->
-                        <div class="d-flex flex-row p-2">
-                            <img src="./assets/img/marina-square.png" />
-                            <div class="px-3 line-height-sm">
-                                <p class="m-0 text-uppercase roboto-bold">Marina Square</p>
-                                <small class="grey text-sm">14 st. deira dubai</small>
-                                <div class="my-1">
-                                    <img class="icon purple me-1" src="./assets/img/market.svg" />
-                                    <small class="text-sm text-uppercase roboto-bold grey">farmer's market</small>
-                                </div>
-                                <div><small class="text-sm text-uppercase roboto-bold grey">20-30 march</small></div>
-                                <div><small class="text-sm text-uppercase roboto-bold grey">10:00am-5:00pm</small></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="map-item m-2 d-flex border-green">
-                        <!-- <div class="border bg-green"></div> -->
-                        <div class="d-flex flex-row p-2">
-                            <img src="./assets/img/marina-square.png" />
-                            <div class="px-3 line-height-sm">
-                                <p class="m-0 text-uppercase roboto-bold">Marina Square</p>
-                                <small class="grey text-sm">14 st. deira dubai</small>
-                                <div class="my-1">
-                                    <img class="icon green me-1" src="./assets/img/sports.svg" />
-                                    <small class="text-sm text-uppercase roboto-bold green">cycling event</small>
-                                </div>
-                                <div><small class="text-sm text-uppercase roboto-bold grey">20-30 march</small></div>
-                                <div><small class="text-sm text-uppercase roboto-bold grey">10:00am-5:00pm</small></div>
-                            </div>
+                        <div class="py-3">
+                            <small class="m-0 grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Pellentesque bibendum varius dolor, a mollis ex consectetur in.<br />
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+                                bibendum varius dolor, a mollis ex consectetur in.</small>
                         </div>
                     </div>
                 </div>
+                <!-- <div class="col-lg-8 d-lg-block d-md-none"> -->
                 <div class="col-lg-8 col-md-12 py-3">
                     <div id="map"></div>
                 </div>
@@ -392,6 +289,7 @@
             const content = document.createElement("div");
 
             content.classList.add("property");
+            content.classList.add("highlight");
             content.innerHTML =
                 `
     <div style="background-color: red; height: 15px; width: 15px; transform: rotate(45deg);"></div>
@@ -411,69 +309,69 @@
                     lng: -122.28528451834352,
                 },
             },
-            {
-                name: "Marina Square",
-                position: {
-                    lat: 37.44440882321596,
-                    lng: -122.2160620727,
-                },
-            },
-            {
-                name: "Marina Square",
-                position: {
-                    lat: 37.39561833718522,
-                    lng: -122.21855116258479,
-                },
-            },
-            {
-                name: "Marina Square",
-                position: {
-                    lat: 37.423928529779644,
-                    lng: -122.1087629822001,
-                },
-            },
-            {
-                name: "Marina Square",
-                position: {
-                    lat: 37.40578635332598,
-                    lng: -122.15043378466069,
-                },
-            },
-            {
-                name: "MARINA SQUARE",
-                position: {
-                    lat: 37.36399747905774,
-                    lng: -122.10465384268522,
-                },
-            },
-            {
-                name: "Marina Square",
-                position: {
-                    lat: 37.38343706184458,
-                    lng: -122.02340436985183,
-                },
-            },
-            {
-                name: "Marina Square",
-                position: {
-                    lat: 37.34576403052,
-                    lng: -122.04455090047453,
-                },
-            },
-            {
-                name: "Marina Square",
-                position: {
-                    lat: 37.362863347890716,
-                    lng: -121.97802139023555,
-                },
-            },
-            {
-                name: "Marina Square",
-                position: {
-                    lat: 37.41391636421949,
-                    lng: -121.94592071575907,
-                },
-            },
+            // {
+            //     name: "Marina Square",
+            //     position: {
+            //         lat: 37.44440882321596,
+            //         lng: -122.2160620727,
+            //     },
+            // },
+            // {
+            //     name: "Marina Square",
+            //     position: {
+            //         lat: 37.39561833718522,
+            //         lng: -122.21855116258479,
+            //     },
+            // },
+            // {
+            //     name: "Marina Square",
+            //     position: {
+            //         lat: 37.423928529779644,
+            //         lng: -122.1087629822001,
+            //     },
+            // },
+            // {
+            //     name: "Marina Square",
+            //     position: {
+            //         lat: 37.40578635332598,
+            //         lng: -122.15043378466069,
+            //     },
+            // },
+            // {
+            //     name: "MARINA SQUARE",
+            //     position: {
+            //         lat: 37.36399747905774,
+            //         lng: -122.10465384268522,
+            //     },
+            // },
+            // {
+            //     name: "Marina Square",
+            //     position: {
+            //         lat: 37.38343706184458,
+            //         lng: -122.02340436985183,
+            //     },
+            // },
+            // {
+            //     name: "Marina Square",
+            //     position: {
+            //         lat: 37.34576403052,
+            //         lng: -122.04455090047453,
+            //     },
+            // },
+            // {
+            //     name: "Marina Square",
+            //     position: {
+            //         lat: 37.362863347890716,
+            //         lng: -121.97802139023555,
+            //     },
+            // },
+            // {
+            //     name: "Marina Square",
+            //     position: {
+            //         lat: 37.41391636421949,
+            //         lng: -121.94592071575907,
+            //     },
+            // },
         ];
 
         window.initMap = initMap;
