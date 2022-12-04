@@ -13,6 +13,8 @@
 }
 a {
     cursor: pointer;
+    text-decoration: none !important;
+    color: white
 }
 *,
 p,
@@ -21,8 +23,8 @@ a,
 span {
     font-family: "Roboto-Regular";
 }
-a {
-    text-decoration: none !important;
+a:hover {
+    color: white;
 }
 .roboto-light {
     font-family: "Roboto-Light";
@@ -64,10 +66,10 @@ a {
     background-color: #1a1718 !important;
 }
 .map-item {
-  border: 1px solid #eee;
+    border: 1px solid #eee;
 }
 .map-single-item {
-  box-shadow: 0 0 10px 5px #eee;
+    box-shadow: 0 0 10px 5px #eee;
 }
 .border-blue {
     border-left: 10px solid #2eb5ec;
@@ -108,7 +110,8 @@ a {
 .white {
     color: #fff;
 }
-button {
+button,
+.button {
     color: #fff;
     border: none;
     text-transform: uppercase !important;
@@ -193,7 +196,7 @@ button {
     border-bottom: 15px solid #bead78;
 }
 .navbar.top-nav-container {
-    z-index: 2;
+    z-index: 3;
 }
 .navbar .top-nav {
     z-index: 2;
@@ -289,7 +292,7 @@ footer .help-links a {
     font-size: 60px;
 }
 .banner-text {
-    top: 50%;
+    top: 45%;
     left: 100px;
     color: #fff;
 }
@@ -398,11 +401,27 @@ section.section2 {
     transform: rotate(45deg);
     padding: 10px;
     margin: 15px;
+    /* animation-name: rotate;
+    animation-duration: 1s; */
+    transition: transform 0.7s ease-in-out;
+}
+.plan-items li:hover {
+    /* animation-name: rotate;
+    animation-duration: 1s; */
+    transform: rotate(405deg);
 }
 .plan-items li img {
     transform: rotate(-45deg);
     width: 35px;
     height: 35px;
+}
+@keyframes rotate {
+    from {
+        transform: rotate(45deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
 }
 
 /* SIGN IN MODAL */

@@ -50,7 +50,8 @@
                             data-bs-toggle="dropdown" aria-expanded="false">
                             en
                         </a>
-                        <ul class="dropdown-menu dropdown-menu-end px-3" aria-labelledby="navbarDropdown">
+                        <ul class="dropdown-menu dropdown-menu-end px-1 position-absolute"
+                            aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="#">ar</a></li>
                         </ul>
                     </li>
@@ -89,7 +90,7 @@
                                 .
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Invest</a>
+                                <a class="nav-link" href="./invest.html">Invest</a>
                             </li>
                             <li class="nav-item dot-separator d-md-none d-lg-block">
                                 .
@@ -118,32 +119,37 @@
                 <div class="ms-5 ps-5 banner-title">
                     <div class="ms-3">
                         <h2 class="roboto-light text-uppercase">CUSTOMIZE<br />YOUR EXPERIENCE</h2>
-                        <button class="bg-dark-transparent w-75 px-0"><b>SELECT YOUR FAVORITE THEME</b></button>
+                        <button class="bg-dark-transparent mb-3 px-5 pe-none"><b>SELECT YOUR FAVORITE THEME</b></button>
                         <ul class="plan-items w-75 p-0">
                             <li>
-                                <a href="#">
+                                <button class="p-0 bg-transparent" onclick="location.href='./map.html'"
+                                    data-toggle="tooltip" data-placement="top" title="Arts">
                                     <img src="./assets/img/arts.svg" />
-                                </a>
+                                </button>
                             </li>
                             <li>
-                                <a href="#">
+                                <button class="p-0 bg-transparent" onclick="location.href='./map.html'"
+                                    href="./map.html" data-toggle="tooltip" data-placement="top" title="Children">
                                     <img src="./assets/img/children.svg" />
-                                </a>
+                                </button>
                             </li>
                             <li>
-                                <a href="#">
+                                <button class="p-0 bg-transparent" onclick="location.href='./map.html'"
+                                    href="./map.html" data-toggle="tooltip" data-placement="top" title="Food">
                                     <img src="./assets/img/food.svg" />
-                                </a>
+                                </button>
                             </li>
                             <li>
-                                <a href="#">
+                                <button class="p-0 bg-transparent" onclick="location.href='./map.html'"
+                                    href="./map.html" data-toggle="tooltip" data-placement="top" title="Market">
                                     <img src="./assets/img/market.svg" />
-                                </a>
+                                </button>
                             </li>
                             <li>
-                                <a href="#">
+                                <button class="p-0 bg-transparent" onclick="location.href='./map.html'"
+                                    href="./map.html" data-toggle="tooltip" data-placement="top" title="Sports">
                                     <img src="./assets/img/sports.svg" />
-                                </a>
+                                </button>
                             </li>
                         </ul>
                     </div>
@@ -154,7 +160,7 @@
 
         <!-- SECTION 1 START -->
         <section class="container section1 py-5 position-relative">
-            <div class="row d-flex align-items-center py-5">
+            <div class="row d-flex align-items-center py-5 mt-5">
                 <div class="col-6">
                     <div class="title">
                         <div class="diamond diamond-md bg-red"></div>
@@ -167,7 +173,7 @@
                         brand look and feel across all marketing and operational material.<br /><br />
                         These guidelines ensure a common language and foundation for all marketing
                         and communication of Dubai Squares,</p>
-                    <button class="bg-red mb-5">Explore more</button>
+                    <a class="bg-red mb-5 button" href="./about.html">Explore more</a>
                 </div>
             </div>
         </section>
@@ -247,7 +253,7 @@
             </div>
         </section>
         <div class="centered-btn text-center">
-            <button class="bg-red">Explore more</button>
+            <a class="bg-red button" href="./squares.html">Explore more</a>
         </div>
         <!-- SECTION 2 END -->
 
@@ -260,7 +266,8 @@
                             <div class="diamond diamond-md bg-red"></div>
                             <h3 class="ms-5 roboto-bold">Upcoming Events</h3>
                         </div>
-                        <a href="#" class="red">All events&nbsp;&nbsp;&nbsp;<i class="fas fa-chevron-right"></i></a>
+                        <a href="./whats-on-list.html" class="red">All events&nbsp;&nbsp;&nbsp;<i
+                                class="fas fa-chevron-right"></i></a>
                     </div>
                 </div>
                 <div class="col-4">
@@ -284,7 +291,9 @@
                         <small class="m-0 grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
                             bibendum varius dolor, a mollis ex consectetur in.</small>
                     </div>
-                    <button class="bg-gold w-100">Explore More</button>
+                    <div class="bg-dark-gold button text-center">
+                        <a href="./event-details.html">Explore More</a>
+                    </div>
                 </div>
                 <div class="col-4">
                     <div class="hoverable-container">
@@ -307,7 +316,9 @@
                         <small class="m-0 grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
                             bibendum varius dolor, a mollis ex consectetur in.</small>
                     </div>
-                    <button class="bg-gold w-100">Explore More</button>
+                    <div class="bg-dark-gold button text-center">
+                        <a href="./event-details.html">Explore More</a>
+                    </div>
                 </div>
                 <div class="col-4">
                     <div class="hoverable-container">
@@ -330,7 +341,9 @@
                         <small class="m-0 grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
                             bibendum varius dolor, a mollis ex consectetur in.</small>
                     </div>
-                    <button class="bg-gold w-100">Explore More</button>
+                    <div class="bg-dark-gold button text-center">
+                        <a href="./event-details.html">Explore More</a>
+                    </div>
                 </div>
             </section>
         </div>
@@ -428,6 +441,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
     <script src="./assets//js/script.js"></script>
 
 </body>

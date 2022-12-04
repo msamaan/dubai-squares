@@ -1,5 +1,6 @@
-// $('.banner').height(window.innerHeight);
-// $('.banner-opacity').height(window.innerHeight);
-$("#profileImage").click(function(e) {
-    $("#imageUpload").click();
-});
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+    $("#profileImage").click(function (e) {
+        $("#imageUpload").click();
+    });
+})
