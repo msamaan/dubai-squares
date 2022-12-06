@@ -424,6 +424,13 @@ section.invest {
     background-size: cover;
     color: white;
 }
+.dropzone {
+    border: 1px dashed rgba(0,0,0,.3);
+}
+.fa-cloud-arrow-up {
+    font-size: 40px;
+    color: lightgrey;
+}
 
 /* PLAN YOUR VISIT */
 .plan-banner {

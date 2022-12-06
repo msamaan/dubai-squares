@@ -18,6 +18,9 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
         integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous"> -->
+
+    <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />
+
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/map.css" />
     <!-- <link rel="stylesheet" type="text/css" href="./assets/css/style-rtl.css" /> -->
@@ -338,107 +341,46 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header bg-white">
-                    <h5 class="modal-title text-uppercase roboto-bold" id="investModalLabel">Invest</h5>
+                    <h5 class="modal-title text-uppercase roboto-bold" id="investModalLabel">Dubai Squares Investment
+                        Form</h5>
                     <button type="button" class="btn-close m-0" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <form>
                     <div class="modal-body bg-white pb-5">
                         <div class="row">
                             <div class="col-4 align-self-center">
-                                <p>Resident Name</p>
+                                <p>Company Name&nbsp;<span class="red">*</span></p>
                             </div>
-                            <div class="col-6">
-                                <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="floatingInput" placeholder="Michael">
-                                    <label for="floatingInput">First Name</label>
-                                    <div class="input-icon"><i class="fas fa-user"></i></div>
+                            <div class="col-4">
+                                <div class="form-group mb-3">
+                                    <input type="text" class="form-control" required>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-6 offset-4">
-                                <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="floatingInput" placeholder="Smith">
-                                    <label for="floatingInput">Last Name</label>
-                                    <div class="input-icon"><i class="fas fa-user"></i></div>
+                            <div class="col-4">
+                                <div class="form-group mb-3">
+                                    <input type="text" class="form-control" required>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-4 align-self-center">
-                                <p>Email Address</p>
+                                <p>Email Address&nbsp;<span class="red">*</span></p>
                             </div>
-                            <div class="col-6">
-                                <div class="form-floating mb-3">
-                                    <input type="email" class="form-control" id="floatingInput"
-                                        placeholder="michael@gmail.com">
-                                    <label for="floatingInput">Email</label>
-                                    <div class="input-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="col-8">
+                                <div class="form-group mb-3">
+                                    <input type="email" class="form-control" placeholder="ex: myname@example.com">
+                                    <small class="grey">example@example.com</small>
                                 </div>
                             </div>
                         </div>
-                        <div class="row mx-2">
-                            <hr />
-                        </div>
-                        <div class="row mt-3">
-                            <div class="col-4 align-self-center">
-                                <p>When would you like to host the event</p>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-floating mb-3">
-                                    <input type="text" class="datepicker form-control" id="floatingInput"
-                                        placeholder="DD/MM/YYYY" />
-                                    <label for="floatingInput">Date Of Birth</label>
-                                    <div class="input-icon"><i class="fas fa-calendar"></i></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row mt-3">
-                            <div class="col-4 align-self-start">
-                                <p>Select event theme</p>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-check p-0">
-                                    <input type="radio" name="eventName" id="arts">
-                                    <label class="form-check-label mx-3" for="flexRadioDefault1">
-                                        Arts and Culture
-                                    </label>
-                                </div>
-                                <div class="form-check p-0">
-                                    <input type="radio" name="eventName" id="food">
-                                    <label class="form-check-label mx-3" for="flexRadioDefault1">
-                                        Food Festival
-                                    </label>
-                                </div>
-                                <div class="form-check p-0">
-                                    <input type="radio" name="eventName" id="sports">
-                                    <label class="form-check-label mx-3" for="flexRadioDefault1">
-                                        Sports and Recreation
-                                    </label>
-                                </div>
-                                <div class="form-check p-0">
-                                    <input type="radio" name="eventName" id="children">
-                                    <label class="form-check-label mx-3" for="flexRadioDefault1">
-                                        Children Activities
-                                    </label>
-                                </div>
-                                <div class="form-check p-0">
-                                    <input type="radio" name="eventName" id="community">
-                                    <label class="form-check-label mx-3" for="flexRadioDefault1">
-                                        Community Markets
-                                    </label>
-                                </div>
-                                <div class="form-check p-0">
-                                    <input type="radio" name="eventName" id="other">
-                                    <label class="form-check-label mx-3" for="flexRadioDefault1">
-                                        Other
-                                    </label>
-                                </div>
+                        <div class="row">
+                            <div class="col12">
+                                <hr />
                             </div>
                         </div>
                         <div class="row mt-4">
                             <div class="col-4 align-self-center">
-                                <p>Which square would you like to invest in?</p>
+                                <p>Which square would you like to invest in?&nbsp;<span class="red">*</span></p>
                             </div>
                             <div class="col-6">
                                 <div class="mb-3 position-relative">
@@ -452,11 +394,11 @@
                         </div>
                         <div class="row mt-4">
                             <div class="col-4 align-self-start">
-                                <p>Provide a brief about your proposal</p>
+                                <p>Provide a brief about your proposal&nbsp;<span class="red">*</span></p>
                             </div>
                             <div class="col-6">
                                 <div class="mb-3">
-                                    <textarea rows="5" class="form-control" placeholder="Type"></textarea>
+                                    <textarea rows="5" class="form-control" placeholder="Type here"></textarea>
                                 </div>
                             </div>
                         </div>
@@ -465,10 +407,12 @@
                                 <p>Kindly attach your proposal in PDF format</p>
                             </div>
                             <div class="col-6">
-                                <div class="mb-3 position-relative">
-                                    <input placeholder="Upload" class="form-control" type="file" id="formFileMultiple"
-                                        multiple>
-                                    <div class="caret-icon"><img class="w-75" src="./assets/img/upload.svg"></div>
+                                <div class="dropzone dropzone-file-area" id="dropzone">
+                                    <div class="dz-default dz-message m-0">
+                                        <i class="mb-3 fa-solid fa-cloud-arrow-up grey"></i>
+                                        <h5 class="roboto-bold m-0">Browse files</h5>
+                                        <small class="grey">Drag and drop files here</small>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -501,14 +445,24 @@
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&libraries=marker&v=beta"
         defer></script>
 
+    <script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
+
     <script src="./assets//js/script.js"></script>
 
 
     <script>
+        Dropzone.autoDiscover = false;
         const advancedMarkerViews = [];
         $(document).ready(function () {
             let that = this;
             $("#map-content").height(window.innerHeight)
+
+            $('#investModal').on('shown.bs.modal', function (e) {
+                $("#dropzone").dropzone({
+                    url: "/upload",
+                    acceptedFiles: 'application/pdf'
+                })
+            })
         });
         function initMap() {
             const center = {
@@ -591,69 +545,6 @@
                     lng: -122.28528451834352,
                 },
             },
-            // {
-            //     name: "Marina Square",
-            //     position: {
-            //         lat: 37.44440882321596,
-            //         lng: -122.2160620727,
-            //     },
-            // },
-            // {
-            //     name: "Marina Square",
-            //     position: {
-            //         lat: 37.39561833718522,
-            //         lng: -122.21855116258479,
-            //     },
-            // },
-            // {
-            //     name: "Marina Square",
-            //     position: {
-            //         lat: 37.423928529779644,
-            //         lng: -122.1087629822001,
-            //     },
-            // },
-            // {
-            //     name: "Marina Square",
-            //     position: {
-            //         lat: 37.40578635332598,
-            //         lng: -122.15043378466069,
-            //     },
-            // },
-            // {
-            //     name: "MARINA SQUARE",
-            //     position: {
-            //         lat: 37.36399747905774,
-            //         lng: -122.10465384268522,
-            //     },
-            // },
-            // {
-            //     name: "Marina Square",
-            //     position: {
-            //         lat: 37.38343706184458,
-            //         lng: -122.02340436985183,
-            //     },
-            // },
-            // {
-            //     name: "Marina Square",
-            //     position: {
-            //         lat: 37.34576403052,
-            //         lng: -122.04455090047453,
-            //     },
-            // },
-            // {
-            //     name: "Marina Square",
-            //     position: {
-            //         lat: 37.362863347890716,
-            //         lng: -121.97802139023555,
-            //     },
-            // },
-            // {
-            //     name: "Marina Square",
-            //     position: {
-            //         lat: 37.41391636421949,
-            //         lng: -121.94592071575907,
-            //     },
-            // },
         ];
 
         window.initMap = initMap;

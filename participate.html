@@ -22,6 +22,9 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"
         integrity="sha512-mSYUmp1HYZDFaVKK//63EcZq4iFWFjxSL+Z3T/aCt4IO9Cejm03q3NKKYN6pFQzY0SBOr8h+eCIAZHPXcpZaNw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />
+
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
 </head>
 
@@ -266,10 +269,12 @@
                                 <p>Kindly attach your proposal in PDF format</p>
                             </div>
                             <div class="col-6">
-                                <div class="mb-3 position-relative">
-                                    <input placeholder="Upload" class="form-control" type="file" id="formFileMultiple"
-                                        multiple>
-                                    <div class="caret-icon"><img class="w-75" src="./assets/img/upload.svg"></div>
+                                <div class="dropzone dropzone-file-area" id="dropzone">
+                                    <div class="dz-default dz-message m-0">
+                                        <i class="mb-3 fa-solid fa-cloud-arrow-up grey"></i>
+                                        <h5 class="roboto-bold m-0">Browse files</h5>
+                                        <small class="grey">Drag and drop files here</small>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -301,10 +306,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"
         integrity="sha512-T/tUfKSV1bihCnd+MxKD0Hm1uBBroVYBOYSk1knyvQ9VyZJpc/ALb4P0r6ubwVPSGB2GvjeoMAJJImBG12TiaQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
+
     <script src="./assets//js/script.js"></script>
     <script>
+        Dropzone.autoDiscover = false;
         $(function () {
             $('.datepicker').datepicker();
+
+            $('#participateModal').on('shown.bs.modal', function (e) {
+                $("#dropzone").dropzone({
+                    url: "/upload",
+                    acceptedFiles: 'application/pdf'
+                })
+            })
         });
     </script>
 
