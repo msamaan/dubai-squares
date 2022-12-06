@@ -126,7 +126,7 @@
                             open to receiving creative proposal in all fields.</p>
                         <div class="w-50">
                             <a href="#map">
-                                <button class="bg-red w-75" type="button"><b>Explore locations</b></button>
+                                <button class="bg-red w-75 button" type="button"><b>Explore locations</b></button>
                             </a>
                         </div>
                     </div>
@@ -148,7 +148,8 @@
                                 bibendum varius dolor, a mollis ex consectetur in.</small>
                         </div>
                     </div>
-                    <button class="bg-blue w-100 mt-4">INVEST NOW</button>
+                    <button data-bs-toggle="modal" data-bs-target="#investModal"
+                        class="bg-blue w-100 mt-4 button">INVEST NOW</button>
                 </div>
                 <!-- <div class="col-lg-8 d-lg-block d-md-none"> -->
                 <div class="col-lg-8 col-md-12 py-3 mt-4">
@@ -279,57 +280,207 @@
             </div>
         </section>
         <!-- MAP END -->
-
-        <!-- FOOTER START -->
-        <footer class="mt-1">
-            <div class="top-footer container">
-                <ul class="social-links py-4 m-0">
-                    <li>
-                        <a aria-current="page" href="#"><img class="w-50" src="./assets/img/logo.svg" /></a>
-                    </li>
-                    <li>
-                        <a aria-current="page" href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    </li>
-                    <li>
-                        <a aria-current="page" href="#"><i class="fa-brands fa-twitter"></i></a>
-                    </li>
-                    <li>
-                        <a aria-current="page" href="#"><i class="fa-brands fa-instagram"></i></a>
-                    </li>
-                    <li>
-                        <a aria-current="page" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                    </li>
-                    <li>
-                        <a aria-current="page" href="#"><i class="fa-brands fa-youtube"></i></a>
-                    </li>
-                </ul>
-                <div>
-                    <img src="./assets/img/dubai-logo.svg" class="w-75 my-3" />
-                </div>
-            </div>
-            <div class="bottom-footer px-5 py-2">
-                <small>Copyright © 2022 DUBAI SQUARES &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; All Rights Reserved.</small>
-                <ul class="help-links">
-                    <li>
-                        <small><a aria-current="page" href="#">Help&nbsp;&nbsp;.</a></small>
-                    </li>
-                    <li>
-                        <small><a aria-current="page" href="#">Send Feedback&nbsp;&nbsp;.</a></small>
-                    </li>
-                    <li>
-                        <small><a aria-current="page" href="#">Privacy Policy&nbsp;&nbsp;.</a></small>
-                    </li>
-                    <li>
-                        <small><a aria-current="page" href="#">Terms & Conditions&nbsp;&nbsp;.</a></small>
-                    </li>
-                    <li>
-                        <small><a aria-current="page" href="#">Careers</a></small>
-                    </li>
-                </ul>
-            </div>
-        </footer>
-        <!-- FOOTER END -->
     </div>
+
+    <!-- FOOTER START -->
+    <footer class="mt-1">
+        <div class="top-footer container">
+            <ul class="social-links py-4 m-0">
+                <li>
+                    <a aria-current="page" href="#"><img class="w-50" src="./assets/img/logo.svg" /></a>
+                </li>
+                <li>
+                    <a aria-current="page" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li>
+                    <a aria-current="page" href="#"><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a aria-current="page" href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a aria-current="page" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+                <li>
+                    <a aria-current="page" href="#"><i class="fa-brands fa-youtube"></i></a>
+                </li>
+            </ul>
+            <div>
+                <img src="./assets/img/dubai-logo.svg" class="w-75 my-3" />
+            </div>
+        </div>
+        <div class="bottom-footer px-5 py-2">
+            <small>Copyright © 2022 DUBAI SQUARES &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; All Rights Reserved.</small>
+            <ul class="help-links">
+                <li>
+                    <small><a aria-current="page" href="#">Help&nbsp;&nbsp;.</a></small>
+                </li>
+                <li>
+                    <small><a aria-current="page" href="#">Send Feedback&nbsp;&nbsp;.</a></small>
+                </li>
+                <li>
+                    <small><a aria-current="page" href="#">Privacy Policy&nbsp;&nbsp;.</a></small>
+                </li>
+                <li>
+                    <small><a aria-current="page" href="#">Terms & Conditions&nbsp;&nbsp;.</a></small>
+                </li>
+                <li>
+                    <small><a aria-current="page" href="#">Careers</a></small>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+
+    <!-- INVEST MODAL START -->
+    <div class="modal fade invest-modal" id="investModal" tabindex="-1" aria-labelledby="investModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-white">
+                    <h5 class="modal-title text-uppercase roboto-bold" id="investModalLabel">Invest</h5>
+                    <button type="button" class="btn-close m-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form>
+                    <div class="modal-body bg-white pb-5">
+                        <div class="row">
+                            <div class="col-4 align-self-center">
+                                <p>Resident Name</p>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="floatingInput" placeholder="Michael">
+                                    <label for="floatingInput">First Name</label>
+                                    <div class="input-icon"><i class="fas fa-user"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 offset-4">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="floatingInput" placeholder="Smith">
+                                    <label for="floatingInput">Last Name</label>
+                                    <div class="input-icon"><i class="fas fa-user"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4 align-self-center">
+                                <p>Email Address</p>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" id="floatingInput"
+                                        placeholder="michael@gmail.com">
+                                    <label for="floatingInput">Email</label>
+                                    <div class="input-icon"><i class="fas fa-envelope"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mx-2">
+                            <hr />
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-4 align-self-center">
+                                <p>When would you like to host the event</p>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="datepicker form-control" id="floatingInput"
+                                        placeholder="DD/MM/YYYY" />
+                                    <label for="floatingInput">Date Of Birth</label>
+                                    <div class="input-icon"><i class="fas fa-calendar"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-4 align-self-start">
+                                <p>Select event theme</p>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-check p-0">
+                                    <input type="radio" name="eventName" id="arts">
+                                    <label class="form-check-label mx-3" for="flexRadioDefault1">
+                                        Arts and Culture
+                                    </label>
+                                </div>
+                                <div class="form-check p-0">
+                                    <input type="radio" name="eventName" id="food">
+                                    <label class="form-check-label mx-3" for="flexRadioDefault1">
+                                        Food Festival
+                                    </label>
+                                </div>
+                                <div class="form-check p-0">
+                                    <input type="radio" name="eventName" id="sports">
+                                    <label class="form-check-label mx-3" for="flexRadioDefault1">
+                                        Sports and Recreation
+                                    </label>
+                                </div>
+                                <div class="form-check p-0">
+                                    <input type="radio" name="eventName" id="children">
+                                    <label class="form-check-label mx-3" for="flexRadioDefault1">
+                                        Children Activities
+                                    </label>
+                                </div>
+                                <div class="form-check p-0">
+                                    <input type="radio" name="eventName" id="community">
+                                    <label class="form-check-label mx-3" for="flexRadioDefault1">
+                                        Community Markets
+                                    </label>
+                                </div>
+                                <div class="form-check p-0">
+                                    <input type="radio" name="eventName" id="other">
+                                    <label class="form-check-label mx-3" for="flexRadioDefault1">
+                                        Other
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-4 align-self-center">
+                                <p>Which square would you like to invest in?</p>
+                            </div>
+                            <div class="col-6">
+                                <div class="mb-3 position-relative">
+                                    <select class="form-control py-2">
+                                        <option>Select</option>
+                                        <option>Option 1</option>
+                                    </select>
+                                    <div class="caret-icon"><i class="fas fa-chevron-down"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-4 align-self-start">
+                                <p>Provide a brief about your proposal</p>
+                            </div>
+                            <div class="col-6">
+                                <div class="mb-3">
+                                    <textarea rows="5" class="form-control" placeholder="Type"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-4 align-self-start">
+                                <p>Kindly attach your proposal in PDF format</p>
+                            </div>
+                            <div class="col-6">
+                                <div class="mb-3 position-relative">
+                                    <input placeholder="Upload" class="form-control" type="file" id="formFileMultiple"
+                                        multiple>
+                                    <div class="caret-icon"><img class="w-75" src="./assets/img/upload.svg"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center position-relative submit-btn">
+                        <input class="bg-gold w-25 py-2" type="submit" value="SUBMIT" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- INVEST MODAL END -->
 
     <!-- 
      The `defer` attribute causes the callback to execute after the full HTML

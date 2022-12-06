@@ -14,7 +14,12 @@
 a {
     cursor: pointer;
     text-decoration: none !important;
-    color: white
+    color: white;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    /* height: 100vh; */
 }
 *,
 p,
@@ -25,6 +30,9 @@ span {
 }
 a:hover {
     color: white;
+}
+a.red:hover {
+    color: #e3001b;
 }
 .roboto-light {
     font-family: "Roboto-Light";
@@ -70,6 +78,9 @@ a:hover {
 }
 .map-single-item {
     box-shadow: 0 0 10px 5px #eee;
+}
+.map-container {
+    min-height: 50vh;
 }
 .border-blue {
     border-left: 10px solid #2eb5ec;
@@ -121,6 +132,10 @@ button,
     letter-spacing: 3px;
     font-family: "Roboto-Light" !important;
 }
+.bg-dark-gold.button:hover, .bg-red.button:hover, .bg-blue.button:hover {
+    box-shadow: inset 0 -3.25em 0 0 #bead78;
+    transition: 0.5s;
+}
 .centered-btn {
     margin-top: -25px;
 }
@@ -147,6 +162,9 @@ button,
 }
 .text-sm {
     font-size: 10px;
+}
+.main-container {
+    flex: 1 0 auto;
 }
 @media (min-width: 768px) {
     .col-sm-15 {
@@ -245,6 +263,7 @@ button,
 footer {
     background-color: #191718;
     color: #fff;
+    flex-shrink: 0;
 }
 footer a {
     color: #fff;
@@ -407,27 +426,21 @@ section.invest {
     list-style: none;
 }
 .plan-items li {
-    border: 3px solid;
     transform: rotate(45deg);
-    padding: 10px;
     margin: 15px;
     transition: transform 0.7s ease-in-out;
 }
-.plan-items li:hover {
-    transform: rotate(405deg);
+.plan-items li div {
+    border: 3px solid;
+    transition: transform 0.5s ease-in-out;
+}
+.plan-items li div:hover {
+    transform: translate(-10px, -10px);
 }
 .plan-items li img {
     transform: rotate(-45deg);
     width: 35px;
     height: 35px;
-}
-@keyframes rotate {
-    from {
-        transform: rotate(45deg);
-    }
-    to {
-        transform: rotate(0deg);
-    }
 }
 
 /* SIGN IN MODAL */
@@ -504,14 +517,14 @@ body.modal-open .main-container {
 .form-check input {
     accent-color: #b07c35;
 }
-.participate-modal .modal-content {
+.participate-modal .modal-content, .invest-modal .modal-content {
     background-color: transparent;
     border: none;
 }
-.participate-modal .submit-btn {
+.participate-modal .submit-btn, .invest-modal .submit-btn {
     margin-top: -20px;
 }
-.participate-modal .submit-btn input {
+.participate-modal .submit-btn input, .invest-modal .submit-btn input {
     border-radius: 15px;
 }
 
@@ -563,6 +576,18 @@ body.modal-open .main-container {
     font-family: "Roboto-Bold" !important;
 }
 
+@media (max-width: 2000px) and (min-width: 992px) {
+    /* .banner,
+    .banner-opacity {
+        height: 40vh;
+    } */
+    section.section1 {
+        margin-top: 80vh;
+    }
+    section.invest {
+        margin-top: 90vh;
+    }
+}
 @media (max-width: 991px) and (min-width: 320px) {
     .banner,
     .banner-opacity {
