@@ -82,6 +82,15 @@ a.red:hover {
 .map-container {
     min-height: 50vh;
 }
+/* .map-content {
+    height: 70vh;
+} */
+#map, #map-data {
+    height: 65vh;
+}
+#map-data {
+    overflow-y: scroll;
+}
 .border-blue {
     border-left: 10px solid #2eb5ec;
 }
