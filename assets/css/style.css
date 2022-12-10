@@ -445,10 +445,14 @@ section.invest {
     transform: rotate(45deg);
     margin: 15px;
     transition: transform 0.7s ease-in-out;
+    cursor: pointer;
 }
 .plan-items li div {
     border: 3px solid;
     transition: transform 0.5s ease-in-out;
+}
+.plan-items li div.active {
+    background-color: #e3001b;
 }
 .plan-items li div:hover {
     transform: translate(-10px, -10px);
@@ -457,7 +461,14 @@ section.invest {
     transform: rotate(-45deg);
     width: 35px;
     height: 35px;
+    cursor: pointer;
 }
+.visually-hidden {
+    position: absolute;
+    left: -100vw;
+}
+
+
 
 /* SIGN IN MODAL */
 body.modal-open .main-container {

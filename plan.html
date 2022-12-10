@@ -119,49 +119,63 @@
                 <div class="ms-5 ps-5 banner-title">
                     <div class="ms-3">
                         <h2 class="roboto-light text-uppercase">CUSTOMIZE<br />YOUR EXPERIENCE</h2>
-                        <button class="bg-dark-transparent mb-3 px-5 pe-none"><b>SELECT YOUR FAVORITE THEME</b></button>
-                        <ul class="plan-items w-75 p-0">
-                            <li>
-                                <div class="p-2">
-                                    <button class="p-0 bg-transparent" onclick="location.href='./map.html'"
-                                        data-toggle="tooltip" data-placement="top" title="Arts">
-                                        <img src="./assets/img/arts.svg" />
-                                    </button>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="p-2">
-                                    <button class="p-0 bg-transparent" onclick="location.href='./map.html'"
-                                        href="./map.html" data-toggle="tooltip" data-placement="top" title="Children">
-                                        <img src="./assets/img/children.svg" />
-                                    </button>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="p-2">
-                                    <button class="p-0 bg-transparent" onclick="location.href='./map.html'"
-                                        href="./map.html" data-toggle="tooltip" data-placement="top" title="Food">
-                                        <img src="./assets/img/food.svg" />
-                                    </button>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="p-2">
-                                    <button class="p-0 bg-transparent" onclick="location.href='./map.html'"
-                                        href="./map.html" data-toggle="tooltip" data-placement="top" title="Market">
-                                        <img src="./assets/img/market.svg" />
-                                    </button>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="p-2">
-                                    <button class="p-0 bg-transparent" onclick="location.href='./map.html'"
-                                        href="./map.html" data-toggle="tooltip" data-placement="top" title="Sports">
-                                        <img src="./assets/img/sports.svg" />
-                                    </button>
-                                </div>
-                            </li>
-                        </ul>
+                        <form id="form" onsubmit="sConsole(event)">
+                            <!-- <button class="bg-dark-transparent mb-3 px-5 pe-none"><b>SELECT YOUR FAVORITE THEME</b></button> -->
+                            <ul class="plan-items w-75 p-0">
+                                <li>
+                                    <div class="p-2">
+                                        <label class="p-0 bg-transparent" data-toggle="tooltip" data-placement="top"
+                                            title="Arts">
+                                            <img src="./assets/img/arts.svg" />
+                                        </label>
+
+                                        <input type="checkbox" name="plan" class="visually-hidden" id="arts">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="p-2">
+                                        <label class="p-0 bg-transparent" data-toggle="tooltip" data-placement="top"
+                                            title="Children">
+                                            <img src="./assets/img/children.svg" />
+                                        </label>
+
+                                        <input type="checkbox" name="plan" class="visually-hidden" id="children">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="p-2">
+                                        <label class="p-0 bg-transparent" data-toggle="tooltip" data-placement="top"
+                                            title="Food">
+                                            <img src="./assets/img/food.svg" />
+                                        </label>
+
+                                        <input type="checkbox" name="plan" class="visually-hidden" id="food">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="p-2">
+                                        <label class="p-0 bg-transparent" data-toggle="tooltip" data-placement="top"
+                                            title="Market">
+                                            <img src="./assets/img/market.svg" />
+                                        </label>
+
+                                        <input type="checkbox" name="plan" class="visually-hidden" id="market">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="p-2">
+                                        <label class="p-0 bg-transparent" data-toggle="tooltip" data-placement="top"
+                                            title="Sports">
+                                            <img src="./assets/img/sports.svg" />
+                                        </label>
+
+                                        <input type="checkbox" name="plan" class="visually-hidden" id="sports">
+                                    </div>
+                                </li>
+                            </ul>
+                            <button class="bg-dark-transparent mb-3 px-5" type="submit" form="form"
+                                value="Submit"><b>SELECT YOUR FAVORITE THEME</b></button>
+                        </form>
                     </div>
                 </div>
             </div>
