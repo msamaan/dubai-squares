@@ -205,7 +205,10 @@ button,
 .navbar .navbar-nav.main-nav {
     border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
-.navbar.bg-dark {
+/* .navbar.bg-dark {
+    background-color: #1a1718 !important;
+} */
+.nav-container {
     background-color: #1a1718 !important;
 }
 .navbar .nav-item {
@@ -236,7 +239,7 @@ button,
     background-color: #1a1718;
     min-width: 0 !important;
     z-index: 2;
-    position: relative;
+    /* position: relative; */
 }
 .navbar .top-nav .dropdown-menu a:hover {
     background-color: #1a1718;
@@ -453,6 +456,7 @@ section.invest {
 }
 .plan-items li div.active {
     background-color: #e3001b;
+    border: 3px solid transparent;
 }
 .plan-items li div:hover {
     transform: translate(-10px, -10px);
